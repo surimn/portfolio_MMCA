@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=deviceidth, initial-scale=1.0">
+    <title>ui07_Service & Newsletter</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style> 
+        /* 서비스 */
+        .container.service{
+            background-color: #BFBFBF;
+        }
+        .content-container.service{
+            display: flex;
+            overflow-x: scroll;
+        }
+        .content-container.service::-webkit-scrollbar{
+            display: none;
+        }
+        .content-item.service{
+            display: flex;
+            flex-direction: column;
+            
+            margin-right: 16px;
+            flex-grow: 1;
+        }
+        .content-thumb.service{
+            width: calc(266/360*100vw);
+            padding-bottom: 50%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        @media (min-width:768px) {
+            .content-thumb.service{
+                width: calc(266/768*100vw);
+            }
+        }
+        @media (min-width:1080px) {
+            .content-container.service{
+                margin: 0 -0.75rem;
+            }
+            .content-item.service{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                width: calc(270/1080*100vw);
+                padding: 0 0.75rem;
+            }
+            .content-thumb.service{
+                width: 100%;
+            }
+            
+        }
+        @media (min-width:1920px) {
+            .content-sub-title{
+                font-size: calc(24/16*1rem); 
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container service">
+        <section class="content-box service">  
+            <!-- 섹션헤더  시작-->
+            <header class="sec-header service">
+                <h2 class="sec-title service">MMCA 하는일</h2> 
+            </header>
+            <!-- 섹션헤더 끝 -->
+
+            <div class="visible-box">
+                <div class="content-container service">
+                    <!-- 1/ 시작 -->
+                    <article class="content-item service">
+                        <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link01.jpeg)">
+                            <img class="a11y-hidden" src="images/img_link01.jpeg" alt="미술은행">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title service">미술은행</h4>
+                        </figcaption>
+                    </article>
+                    <!-- 1/ 끝 -->
+                    <!-- 2/ 시작 -->
+                    <article class="content-item service">
+                        <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link02.jpeg)">
+                            <img class="a11y-hidden" src="images/img_link02.jpeg" alt="레지던시">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title service">레지던시</h4>
+                        </figcaption>
+                    </article>
+                    <!-- 2/ 끝 -->
+                    <!-- 3/ 시작 -->
+                    <article class="content-item service">
+                        <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link03.jpeg)">
+                            <img class="a11y-hidden" src="images/img_link03.jpeg" alt="도서와 아카이브">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title service">도서와 아카이브</h4>
+                        </figcaption>
+                    </article>
+                    <!-- 3/ 끝 -->
+                    <!-- 4/ 시작 -->
+                    <article class="content-item service">
+                        <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link04.jpeg)">
+                            <img class="a11y-hidden" src="images/img_link04.jpeg" alt="어린이미술관">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title service">어린이 미술관</h4>
+                        </figcaption>
+                    </article>
+                    <!-- 4/ 끝 -->
+                </div>
+            </div>
+
+
+            
+        </section>
+    </div>
+
+
+    
+    
+   
+</body>
+</html>

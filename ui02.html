@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui02</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        .reservation-m{
+            width: 100%;
+        }
+        .reservation-m .content-box{
+            border: 1px solid #222;
+            border-radius: 16px;
+            margin: calc(20/16*1rem);  
+            padding: calc(20/16*1em) 0;
+        }
+        .reservation-m .content{
+            margin: 0 20px;    
+        }
+        .reservation-m .content-head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .reservation-m .content-title{
+            font-weight: bolder;
+            font-size: calc(16/360*100vw);
+        }
+        .reservation-m .content-desc{
+            font-size: calc(12/360*100vw);
+            margin-bottom: 2rem;
+        }
+        .btn.typeA{
+            display: block;
+            width: 100%;
+            padding: 1em 0px;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            font-size: 0.8rem;
+            border-radius: 2rem;
+        }
+        @media (min-width:768px){
+            .reservation-m .content-title{
+                font-size: calc(17/768*100vw);
+            }
+            .reservation-m .content-desc{
+                font-size: calc(14/768*100vw);
+            }
+        }
+        @media (min-width:1080px) {
+            .reservation-m .content-box{
+                height: 180px;
+                display: block;
+                position: relative;
+            }
+            .reservation-m .content-title{
+                font-size: calc(36/16*1rem);
+                font-weight: bold;
+                width: 80%;
+                margin-top: 10px;
+            }
+            .reservation-m .content-desc{
+                font-size: 1rem;
+                margin-top: 20px;
+                line-height: 20px;
+            }
+            .reservation-m .btn.typeA{
+                position: absolute;
+                top: 0; margin-top: 30px;
+                right: 0; margin-right: 20px;
+                width: calc(220/1080*100vw);
+                font-weight: 1.1rem;
+            }
+            .reservation-m .close-light-icon{
+                position: absolute;
+                right: 0; margin-right: 20px;
+                bottom: 0; margin-bottom: 20px;
+            }
+        }
+        @media (min-width:1920px) {
+            .reservation-m{
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="reservation-m">
+        <div class="content-box">
+            <div class="content content-head">
+                <h3 class="content-title">국립현대미술관 관람 예약 바로가기</h3>
+                <a href="#" class="close-light-icon">
+                    <img src="images/icons-close-light.png" srcset="images/icons-close-light@2x.png 2x , images/icons-close-light@3x.png 3x" alt="닫기아이콘">
+                </a>
+            </div>
+            <p class="content content-desc">
+                화요일-일요일 10:00-18:00(월요일 서울 개관)<br>
+                서울 덕수궁: 수요일,토요일 야간개장 10:00-21:00
+            </p>
+            <div class="content">
+                <a class="btn typeA">
+                    전시 관람 예약하기
+                </a>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

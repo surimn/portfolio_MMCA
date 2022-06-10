@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui04_Exhibit</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        /* .sec-header{
+            width: 100vw;
+        }
+        .content-container.exhibit{
+            display: flex;
+            overflow-x: scroll;
+            overflow-x:hid
+        }
+        .content-container.exhibit::-webkit-scrollbar{
+            display: none;
+        }
+        .content-item.exhibit{
+            display: flex;
+            flex-direction: column;
+
+            flex-grow: 1;
+
+        }
+        .content-thumb.exhibit{
+            width: calc(265/360*100vw);
+            padding-bottom: calc(420/360*100vw);
+            border-radius: 10px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container exhibit">
+        <section class="content-box">
+            <header class="sec-header">
+                <h2 class="sec-title">전시</h2> 
+                <a href="#" class="more m">
+                    <span>더보기</span>
+                    <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                </a>
+            </header>
+                <!-- 자바스크립트로 처리하기 나중에 -->
+            <div class="visible-box-1">
+                <div class="content-container exhibit">
+                    <!-- 1/ 시작 -->
+                    <article class="content-item exhibit">
+                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh01.png)">
+                            <img class="a11y-hidden" src="images/img_exh01.png" alt="히토 슈타이얼">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title">서울</h4>
+                            <h3 class="content-title exhibit">히토 슈타이얼 - 데이터의 바다</h3>
+                            <p class="content-desc exhibit">
+                                2022-04-29~2022-09-18
+                            </p>
+                            <a class="audio-guide">
+                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
+                                <span>오디오 가이드</span>
+                            </a>
+                        </figcaption>
+                    </article>
+                    <!-- 1/ 끝 -->    
+                    <!-- 2/ 시작 -->
+                    <article class="content-item exhibit">
+                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh02.png)">
+                            <img class="a11y-hidden" src="images/img_exh02.png" alt="가면무도회">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title">과천</h4>
+                            <h3 class="content-title exhibit">가면무도회</h3>
+                            <p class="content-desc exhibit">
+                                2022-04-13 ~ 2022-07-31
+                            </p>
+                            <a class="audio-guide">
+                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
+                                <span>오디오 가이드</span>
+                            </a>
+                        </figcaption>
+                    </article>
+                    <!-- 2 끝-->
+                    <!-- 3/ 시작-->
+                    <article class="content-item exhibit">
+                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh03.png)">
+                            <img class="a11y-hidden" src="images/img_exh03.png" alt="히토 슈타이얼">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title">서울</h4>
+                            <h3 class="content-title exhibit">나너의 기억</h3>
+                            <p class="content-desc exhibit">
+                                2022-04-08 ~ 2022-08-07
+                            </p>
+                            <a class="audio-guide">
+                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
+                                <span>오디오 가이드</span>
+                            </a>
+                        </figcaption>
+                    </article>
+                    <!--3/ 끝-->
+                    <!-- 4/ 시작-->
+                    <article class="content-item exhibit">
+                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh04.png)">
+                            <img class="a11y-hidden" src="images/img_exh04.png" alt="히토 슈타이얼">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title">청주</h4>
+                            <h3 class="content-title exhibit">MMCA 국제미술 소장품 기획전 «미술로, 세계로»</h3>
+                            <p class="content-desc exhibit">
+                                2022-01-20 ~ 2022-06-12
+                            </p>
+                            <a class="audio-guide">
+                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
+                                <span>오디오 가이드</span>
+                            </a>
+                        </figcaption>
+                    </article>
+                    <!--4/ 끝-->
+                </div>            
+            </div>
+        </section>
+    </div>
+</body>
+</html>

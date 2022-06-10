@@ -1,0 +1,126 @@
+.menu-pannel{
+    z-index: 99;
+}
+.main-page{
+	overflow: hidden;
+}
+.footer{
+	padding: 50px 0;
+}
+.main-header.pc{
+	display: none;
+}
+@media (min-width: 360px) {
+	.main-contents{
+		padding: 0 20px;
+	}
+	.container{
+		padding: 40px 0px;
+	}
+	.container.service{
+		padding-top: 100px;
+	}
+	.container.news
+	,.footer{
+		padding: 40px 20px;
+	}	
+	.sec-header.service{
+		padding: 0 20px;
+	}
+	.content-container.service{
+		padding-left: 20px;
+	}
+	.menu-pannel{
+		padding: 0 20px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1080px) {
+	
+}
+
+
+@media (min-width: 1920px) {
+	.main-page{
+		width: 100vw;
+	}
+	.main-header-box.mobile{
+		display: none;
+	}
+	.main-page {
+		display: grid;
+		grid-template-columns: 10% 80% 10%;
+		grid-template-areas:
+			'main-header-pc         main-header-pc          main-header-pc	'
+			'reservation-m         	reservation-m        	reservation-m	'
+			'hero-banner        	hero-banner        		hero-banner	  	'
+			' .      				main-contents        		.			'
+			' .   			 		box-news    				.			'
+			' .        				footer          			.			'
+	}
+
+	.main-header.pc {
+		grid-area: main-header-pc;
+	}
+	.reservation-m {
+		grid-area: reservation-m;
+	}
+	.container.hero-banner {
+		grid-area: hero-banner;
+	}
+	.main-contents {
+		grid-area: main-contents;
+	}
+	.container.museum {
+		grid-area: museum;
+	}
+	.container.collec {
+		grid-area: collec;
+	}
+	.container.digital {
+		grid-area: digital;
+	}
+	.container.service {
+		grid-area: service;
+	}
+	
+	
+
+	.box-news{
+		grid-area: box-news;
+		background-color: #fff;	
+		grid-column:2/3;
+		grid-rows: 5/6;
+		
+		z-index: 999;
+	}
+	.bg-please{
+		background-color: #bfbfbf;
+		width: 100%;
+		height: 100%;
+		grid-column:1/2;
+		grid-row: 5/7;
+
+	}
+	.bg-please-2{
+		background-color: #bfbfbf;
+		width: 100%;
+		height: 100%;
+		grid-column:3/4;
+		grid-row: 5/7;
+	}
+	.footer{
+		grid-area: footer;
+		width: 100vw;
+		background-color: #bfbfbf;	
+	}
+	.footer {
+		width: calc(1600/1900*100vw);
+		margin: 0 auto; 
+	}
+} 
+

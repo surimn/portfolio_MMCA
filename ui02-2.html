@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui02-1_Hero-banner</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        .hero-banner{
+            display: none;
+        }
+        .hero-banner-image{
+            padding-bottom:calc(1000/1920*100%);
+            position: relative;
+        }
+        .hero-banner .btn.typeC{
+            display: block;
+            width: 20%;
+            padding: 1em 0px;
+
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 2rem;
+            border: 1px solid #fff;
+
+            position: absolute;
+            left: 100%;
+            top: 100%;
+            transform: translate(-110%, -160%);
+        }
+        .hero-banner .btn.typeC:hover{
+            background-color: rgba(256, 256, 256, 0.2);
+        }
+        .hero-banner-message {
+            display: none;
+        }
+        .hero-banner-message span{
+            display: block;
+            font-size: calc(24/16*1rem);
+            line-height: 1.5em;
+            text-align: right;
+            margin: 0 20px 20px 0;
+        }
+        .hero-banner-message span:first-child{
+            font-weight: bolder;
+            margin-top: 270px;
+        }
+        @media (min-width:768px){
+            .hero-banner{
+                display: block;
+            }
+        }
+        @media (min-width:1920px) {
+            .hero-banner-message{
+                display: block;
+            }
+            .hero-banner .btn.typeC{
+                font-size: 1.2rem;
+                height: 4rem;
+                width: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container hero-banner">
+        <p class="hero-banner-message">
+            <span>‘가장 영향력 있는 미디어 작가’ 중 한 명인 히토 슈타이얼의 대규모 개인전 </span>
+            <span>디지털 사회 이면을 바라보다 《히토 슈타이얼-데이터의 바다》을 만나보시길 바랍니다.</span> 
+        </p>
+        <figure class="hero-banner-image a11y-hidden-bg" style="background-image: url(images/img_hb_1.png)">
+            <img class="a11y-hidden" src="images/img_place01_d.jpg" alt="ui02-1_Heoro-banner">
+            <a class="btn typeC">전시 관람 예약하기</a>
+        </figure>
+    </div>
+    
+</body>
+</html>

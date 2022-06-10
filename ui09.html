@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui09_footer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style>
+       .footer{
+            background-color: #bfbfbf;
+       }
+       .links-container.m1{
+           display: flex;
+           padding-bottom: 40px;   
+       }
+       .links-container.m1 .links{
+        flex: 1 1 auto;
+        font-size: calc(12/16*1rem);
+       }
+       .links >li>a{
+           line-height: calc(20/12*1rem);
+           display: inline-block;
+           /* padding-top: 10px;   */
+       }
+       [class='links-head']{
+           font-weight: bold;
+           font-size: larger;
+           line-height: 1.2em;
+           margin-bottom: 10px;
+       }
+       .links-container.m2{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-bottom: 20px;
+       }
+        .links-container.m2 .logo-img{
+           width: 30px;
+       }
+        .links-container.m2 .links-sites{
+          width:60%;
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          font-size: calc(14/16*1rem);
+       }
+        .info{
+                font-size: calc(10/16*1rem);
+            }
+        .info-desc{
+            width: 80%;
+            line-height: calc(16/10*1em);
+            margin-bottom: 0.5rem;
+        }  
+
+       @media (min-width:768px) {
+            
+           .links-box{
+               display: flex;
+               flex-direction: row-reverse;
+           }
+           .links-container{
+               flex: 1 1 auto;
+           }
+           .links-container.m1{
+               width: 80%;
+           }
+           .links-container.m2{
+               flex-direction: column;
+               width: 20%;
+               align-items: flex-start;
+               justify-content: flex-start;
+           }
+           .links-container.m2 .links-sites{
+               flex-direction: column;
+               line-height: 1.5rem;
+               margin-top: 20px;
+           }
+
+           
+       }
+       @media (min-width:1080px){
+            .links-box{
+                flex-direction: column-reverse;
+            }
+            .links-container.m2{
+                flex-direction: row ;
+                width: 100%;
+                justify-content: space-between;   
+            }
+            .links-container.m2 .links-sites{
+                flex-direction: row;
+                margin: 0;
+                width: 25%;
+            }
+            .links-container.m1{
+                flex-direction: column;
+                width: 100%;
+            }
+            .links-container.m1 .links{
+                display: flex;
+                align-items: center;
+            }
+            [class='links-head']{
+                width: 10%;
+                margin: 0;
+            }
+            .links-container.m1 .links li{
+                margin-right: 10px;
+            }
+
+       }
+       @media (min-width:1920px){
+            .links-box{
+                flex-direction: row-reverse;
+            }
+            .links-container.m2{
+                justify-content: flex-start;
+                /* width: 40%; */
+            }
+            .links-container.m1{
+                flex-direction: row;
+            }
+            .links-container.m1 .links{
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: calc(21/16*1rem);
+                line-height: 40px;
+            }
+            [class='links-head']{
+                margin-bottom: 10px;
+                width: 100%;
+                font-size: calc(24/16*1rem);
+            }
+            .links-container.m2 .logo-img{
+                width: 75px;
+                margin-right: 20px;
+            }
+            .links-container.m2 .links-sites{
+                width: 40%;
+                font-size: calc(24/16*1rem);
+            }
+            .info
+            ,.info .copyright{
+                font-size: 1rem;
+            }
+
+       }
+    </style>
+</head>
+<body>
+   <div class="footer">
+       <div class="links-box">
+        <div class="links-container m1">
+            <ul class="links social">
+                 <li class="links-head">소셜</li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">트위터</a></li>
+                <li><a href="#">인스타그램</a></li>
+            </ul>
+            <ul class="links notice">
+                  <li class="links-head">법적고지</li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">저작권정책</a></li>
+                <li><a href="#">국민신문고</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">불편부조리신고</a></li>
+            </ul>
+            <ul class="links etc">
+                  <li class="links-head">참여</li>
+                <li><a href="#">미술관 소개</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">후원</a></li>
+                <li><a href="#">MMCA 프렌즈</a></li>
+                <li><a href="#">자원봉사</a></li>
+                <li><a href="#">시설대관/복제신청</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">국립현대미술관 문화재단</a></li>
+            </ul>
+        </div>
+        <div class="links-container m2">
+            <a href="#" class="logo-img">
+                <img src="images/logo-img.png" srcset="images/logo-img@2x.png 2x, images/logo-img@3x.png 3x" alt="mmca로고">
+            </a>
+            <div class="links-sites">
+                <a href="#" class="site-newsletter">소식지</a>
+                <a href="#" class="site-shop">온라인숍</a>
+                <a href="#" class="site-membership">멤버쉽</a>
+            </div>
+        </div>
+       </div>
+       <div class="info">
+            <p class="info-desc">
+                대표자: 윤범모, 사업자등록번호: 138‒83‒00313<br>대표전화: (서울) 02‒3701‒9500, (과천) 02‒2188‒6000, (덕수궁) 02‒2022‒0600, (청주) 043‒261‒1400 
+            </p>
+    
+           <small class="copyright">
+            &copy; 2021 National Museum of Modern and Contemporary Art, Korea
+           </small>
+       </div>
+   </div>
+
+    
+   
+</body>
+</html>

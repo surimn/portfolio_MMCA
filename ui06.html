@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui06_digitalMuseum</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style>
+        .content-container.digital{
+            display: flex;
+            width: 300%;
+        }
+        .content-item.digital{
+            flex-grow: 1;
+            width: calc(320/360*100vw);
+        }     
+        .content-thumb.digital{
+            /* width: calc(320/360*100vw); */
+            width: 100%;
+            height: calc(220/360*100vw);
+            border-radius: 10px;
+            margin:  20px 0;
+        }
+       @media (min-width:1080px) {
+        .visible-box.digital{
+            margin: 0 -12px;
+        }   
+        .content-container.digital{
+            width: 100%;
+        }
+        .content-item.digital{
+            padding: 0 12px ;
+        }
+        .content-thumb.digital{
+            width: 100%;
+           height: calc(200/1080*100vw);
+        }
+        .navigation{
+            display: none;
+        }
+       }
+       .before-icon,
+       .next-icon{
+        padding: 10px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container digital">
+        <section class="content-box">  
+            <!-- 섹션헤더  시작-->
+            <header class="sec-header">
+                <h2 class="sec-title">디지털 미술관</h2> 
+                <a href="#" class="more m">
+                    <span>더보기</span>
+                    <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                </a>
+            </header>
+            <!-- 섹션헤더 끝 -->
+            <!-- 디지털 미술관 시작 -->
+            <div class="visible-box digital">
+                <div class="content-container digital">
+                    <!-- 1/ 시작 -->
+                    <article class="content-item digital tv1">
+                        <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital01.jpeg)">
+                            <img class="a11y-hidden" src="images/img_digital01.jpeg" alt="mmca tv- 김지민">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title-2">MMCA TV</h4>
+                            <h3 class="content-title digital">
+                                [청소년 온라인 워크숍]에듀케이터의 실험실 #라벨 #김지민
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <!-- 1/ 끝 -->
+                    <!-- 2/ 시작 -->
+                    <article class="content-item digital tv2">
+                        <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital02.jpeg)">
+                            <img class="a11y-hidden" src="images/img_digital02.jpeg" alt="1930년대">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title-2">MMCA TV</h4>
+                            <h3 class="content-title digital">
+                                2022 국립현대미술관 미술은행 프로젝트<br>
+                                «공공 x 김보희»
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <!-- 2 끝-->
+                    <!-- 3/ 시작-->
+                    <article class="content-item digital tv3">
+                        <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital03.png)">
+                            <img class="a11y-hidden" src="images/img_digital03.png" alt="1950년대">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title-2">MMCA TV</h4>
+                            <h3 class="content-title digital">
+                                [오늘, 이 작품] 빅토르 바사렐리<br>
+                                Victor VASARELY ‹게자›, 1983
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <!--3/ 끝-->
+                </div>
+            </div>
+
+            <!-- 디지털 미술관 끝 -->
+            <!-- 네비게이션 시작 -->
+            <div class="navigation digital">
+                <a href="#" class="before-icon">
+                    <img src="images/icons-navigate-before.png" srcset="images/icons-navigate-before@2x.png 2x, images/icons-navigate-before@3x.png 3x" alt="이전아이콘">
+                </a>
+                <div class="indicators">
+                    <a href="#" class="indicator-active">
+                        <img src="images/elements-indicator-active.png" srcset="images/elements-indicator-active@2x.png 2x, images/elements-indicator-active@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                </div>
+                <a href="#" class="next-icon">
+                    <img src="images/icons-navigate-next.png" srcset="images/icons-navigate-next@2x.png 2x, images/icons-navigate-next@3x.png 3x" alt="다음아이콘">
+                </a>
+            </div>
+            <!-- 네비게이션 끝 -->
+        </section>
+    </div>
+   
+</body>
+</html>

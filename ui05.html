@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui05_collection</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+       .content-thumb.collec{
+           width: 100%;
+           height: calc(110/360*100vw);
+           border-radius: 10px;
+           margin:  20px 0 10px 0 ;
+       }
+       .content-desc.collec{                        
+            margin-top: 0.5em;
+            display: flex;
+            flex-direction: column;
+
+       }
+       .content-desc.collec span:nth-child(1){
+           display: none;
+           margin-bottom: 0.5em;
+       }
+       .content-desc.collec span:nth-child(2){
+           opacity: 0.5;
+           font-weight: bold;
+       }
+       @media (min-width:1080px) {
+        .content-thumb.collec{
+            height: calc(240/1080*100vw);
+        }
+        .content-desc.collec span:nth-child(2){
+            font-size: 1rem;
+        }
+       }
+       @media (min-width:1920px) {
+        .content-item.collec{                        
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        .content-desc.collec span:nth-child(1){
+            display: flex;
+        }
+        .content-thumb.collec{
+            width: calc(1195/1920*100vw);
+            height: calc(260/1920*100vw);
+        }
+        .content-desc.collec{
+            flex: 1 1 auto;
+        }
+        .content-title.collec{
+             font-size: calc(21/16*1rem);
+        }
+        .content-desc.collec span:nth-child(2){
+            font-size: calc(21/16*1rem);
+            margin-top: 10px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container collec">
+        <section class="content-box">
+        
+            <header class="sec-header">
+                <h2 class="sec-title">소장품</h2> 
+                <a href="#" class="more m">
+                    <span>더보기</span>
+                    <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                </a>
+            </header>
+                <!-- 자바스크립트로 처리하기 나중에 -->
+            <div class="content-container collec">
+                <!-- 1/ 1910년대 ~ 1920년대 시작 -->
+                <article class="content-item collec">
+                    <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec01.jpeg)">
+                        <img class="a11y-hidden" src="images/img_collec01.jpeg" alt="1910년대">
+                    </figure>
+                    <figcaption class="content-desc collec">
+                        <p class="content-desc collec">
+                            <span class="content-title collec">국립현대미술관 소장품 300</span>
+                            <span>1910년대 ~ 1920년대</span> 
+                        </p>
+                    </figcaption>
+                </article>
+                <!-- 1/ 끝 -->
+        
+                <!-- 2/ 시작 -->
+                <article class="content-item collec">
+                    <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec02.jpeg)">
+                        <img class="a11y-hidden" src="images/img_collec02.jpeg" alt="1930년대">
+                    </figure>
+                    <figcaption>
+                        <p class="content-desc collec">
+                            <span class="content-title collec">국립현대미술관 소장품 300</span>
+                            <span>1930년대 ~ 1940년대</span> 
+                        </p>
+                    </figcaption>
+                </article>
+                <!-- 2 끝-->
+
+                <!-- 3/ 시작-->
+                <article class="content-item collec">
+                    <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec03.JPG)">
+                        <img class="a11y-hidden" src="images/img_collec03.JPG" alt="1950년대">
+                    </figure>
+                    <figcaption>
+                        <p class="content-desc collec">
+                            <span class="content-title collec">국립현대미술관 소장품 300</span>
+                            <span>1950년대 ~ 1960년대</span> 
+                        </p>
+                    </figcaption>
+                </article>
+                <!--3/ 끝-->
+
+                <!-- 4/ 시작-->
+                <article class="content-item collec">
+                    <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec04.jpeg)">
+                        <img class="a11y-hidden" src="images/img_collec04.jpeg" alt="1970년대">
+                    </figure>
+                    <figcaption>
+                        <p class="content-desc collec">
+                            <span class="content-title collec">국립현대미술관 소장품 300</span>
+                            <span>1970년대 ~ 1980년대</span> 
+                        </p>
+                    </figcaption>
+                </article>
+                <!--4/ 끝-->
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

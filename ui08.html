@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=deviceidth, initial-scale=1.0">
+    <title>ui08_news</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style>
+        .container.news{
+            background-color: #BFBFBF;
+        }
+        .content-box{
+            overflow-x: hidden;
+        }
+        /* 뉴스레터 */
+        .content-box.newsletter{
+            overflow: hidden;
+            overflow-x: hidden;        
+        }
+        .content-container.newsletter{
+            display: flex;
+            width: 400%;
+        }
+        .content-item.newsletter{  
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; 
+            width: 100%;
+        }
+        .content-thumb.newsletter{
+            width: 100%;
+            padding-bottom: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px; 
+        }
+        .visible-box.newsletter{
+            overflow: hidden;
+        }
+        .binding-box.news{
+            margin-top: 100px;
+        }
+        .content-box.news{
+           padding-top: 50px;
+        } 
+        /* 뉴스레터 구독 */
+       .content-container.newsletter-subs{
+           display: flex;
+           justify-content: space-between;
+       }
+       .newsletter-subs .input-email{
+           border: 1px solid #222;
+           border-radius: 2rem;
+           background-color: #BFBFBF;
+           line-height: 30px;
+           width: calc(205/320*100%);
+           font-size: 0.9rem;
+       }
+       .content-box.newsletter-subs .btn.typeC{
+            display: block;
+            width: calc(106/320*100%);
+            line-height: 30px;
+            background-color: #BFBFBF;
+            border: 1px solid #222;
+            text-align: center;
+            font-size: 0.9rem;
+            border-radius: 2rem;
+        }
+        /* 새소식 */
+        .divider{
+            margin: 0px;            
+        }
+        .content-item.news{
+            margin-top: 10px;
+        }
+        .content-item.news tr{
+            line-height: 2.5em;
+            font-size: calc(14/16*1rem);
+        }
+        @media (min-width:768px) {
+            .content-thumb.newsletter{
+                padding-bottom: calc(335/768*100%);
+            }
+        }
+        @media (min-width:1080px) {
+            .content-box.newsletter .content-title{
+                font-size: 1rem;
+            }
+            .visible-box.newsletter{
+                margin: 0 -0.75rem;
+            }
+            .content-container.newsletter{
+                width: 100%;
+                margin: 0;
+            }
+            .content-item.newsletter{
+                padding: 0 0.75rem;
+            }
+            .content-thumb.newsletter{
+                padding-bottom: 100%;
+            }
+            .navigation.newsletter{
+                display: none;
+            }
+            .binding-box.news{
+                display: flex;  
+                margin-top: 100px;
+            }
+            .content-box.newsletter-subs,
+            .content-box.news{
+                width: 50vw;
+                flex-grow: 1;
+            }
+            .content-box.newsletter-subs{
+                padding-right: 0.75rem;
+                padding-top: 50px;
+            }
+            .content-box.news{
+                padding-left: 0.75rem;
+            } 
+            .content-box.newsletter-subs .btn.typeC
+            ,.content-box.newsletter-subs .input-email{
+                text-align: center;
+                line-height: 40px;
+                font-size: 1.3rem;
+                border-radius: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container news">
+        <section class="content-box newsletter">  
+            <!-- 섹션헤더  시작-->
+            <header class="sec-header newsletter">
+                <h2 class="sec-title newsletter">MMCA 뉴스레터</h2> 
+                <a href="#" class="more m newsletter">
+                    <span>더보기</span>
+                    <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                </a>
+            </header>
+            <!-- 섹션헤더 끝 -->
+            <!-- 뉴스레터 시작 -->
+            <div class="visible-box newsletter">
+                <div class="content-container newsletter">
+                    <article class="content-item newsletter">
+                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news01.png)">
+                            <img class="a11y-hidden" src="images/news01.png" alt="뉴스레터">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h3 class="content-title newsletter">
+                                디지털 사회 이면을 바라보다, 히토슈타이얼-데이터의 바다 
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <article class="content-item newsletter">
+                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news02.png)">
+                            <img class="a11y-hidden" src="images/news02.png" alt="뉴스레터">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h3 class="content-title newsletter">
+                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <article class="content-item newsletter">
+                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news03.png)">
+                            <img class="a11y-hidden" src="images/news03.png" alt="뉴스레터">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h3 class="content-title newsletter">
+                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                            </h3>
+                        </figcaption>
+                    </article>
+                    <article class="content-item newsletter">
+                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news04.png)">
+                            <img class="a11y-hidden" src="images/news04.png" alt="뉴스레터">
+                        </figure>
+                        <figcaption>
+                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h3 class="content-title newsletter">
+                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                            </h3>
+                        </figcaption>
+                    </article>
+                </div>
+            </div>   
+            <!-- 뉴스레터 끝 -->
+            <!-- 네비게이션 시작 -->
+            <div class="navigation newsletter">
+                <a href="#" class="before-icon">
+                    <img src="images/icons-navigate-before.png" srcset="images/icons-navigate-before@2x.png 2x, images/icons-navigate-before@3x.png 3x" alt="이전아이콘">
+                </a>
+                <div class="indicators">
+                    <a href="#" class="indicator-active">
+                        <img src="images/elements-indicator-active.png" srcset="images/elements-indicator-active@2x.png 2x, images/elements-indicator-active@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                    <a href="#" class="indicator-normal">
+                        <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
+                    </a>
+                </div>
+                <a href="#" class="next-icon">
+                    <img src="images/icons-navigate-next.png" srcset="images/icons-navigate-next@2x.png 2x, images/icons-navigate-next@3x.png 3x" alt="다음아이콘">
+                </a>
+            </div>
+            <!-- 네비게이션 끝 -->
+        </section>
+       
+        <div class="binding-box news">
+            <section class="content-box newsletter-subs">  
+                <!-- 섹션헤더  시작-->
+                <header class="sec-header newsletter-subs">
+                    <h2 class="sec-title newsletter-subs">MMCA 뉴스레터 구독신청</h2> 
+                </header>
+                <!-- 섹션헤더 끝 -->
+    
+                <!-- 뉴스레터 구독 시작 -->
+                <form class="content-container newsletter-subs">
+                    <input class="input-email" type="email" placeholder="이메일 주소를 입력하세요">
+                    <input class="btn typeC" type="submit" value="구독하기">
+                </form>
+                <!-- 뉴스레터 구독 끝 -->
+            </section>
+            
+            <section class="content-box news">  
+                <!-- 섹션헤더  시작-->
+                <header class="sec-header news">
+                    <h2 class="sec-title news">새소식</h2> 
+                    <a href="#" class="more m news">
+                        <span>더보기</span>
+                        <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                    </a>
+                </header>
+                <!-- 섹션헤더 끝 -->
+                <!-- 새소식 시작 -->
+                <div class="content-container news">
+                    <table class="content-item news">
+                        <tr><td><a>국립현대미술관 소식지 9호 표지촬영 안내</a></td></tr>
+                        <tr><td><a>2022년 현충일 기념 미술관 정상개관 및 대체휴관일 ...</a></td></tr>
+                        <tr><td><a>과천관 하늘정원, 원형정원, 옥상정원 출입 제한 안내</a></td></tr>
+                    </table>
+                </div>
+                <!-- 새소식 끝 -->
+            </section>
+        </div>
+
+    </div>
+
+    
+    
+   
+</body>
+</html>
