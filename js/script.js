@@ -1,43 +1,6 @@
 $(document).ready(function(){
-    //pc헤더 메뉴 제어
-    $('.submenu').hide();
-    $('.main-header.pc .menu>li').mouseover(function(){  
-        $('.menu-bg').stop().slideDown(500);     
-        $(this).find('.submenu').stop().slideDown(500);
-    }).mouseout(function(){
-        $('.menu-bg').stop().slideUp(500);
-        $(this).find('.submenu').stop().slideUp(500);
-        
-    });
 
-    //예약페이지 제어
-    $('.reservation-m .close-light-icon').click(function(){
-        $('.reservation-m').hide();
-    });
-
-    // 검색창 제어
-    $('.box.search').hide();
-    $('.search-icon').mouseover(function(){
-        $('.icon-img').attr("src","images/icons-close@3x.png");
-        $('.box.search').stop().slideDown(500);
-    });
-    $('.search-icon').click(function(){
-        $('.box.search').hide();
-        $('.icon-img').attr("src","images/icons-search@3x.png");
-    });
-
-    //// 검색창 제어 pc
-    $('.box.search-pc').hide();
-    $('.nav.menu-2 .search-icon').mouseover(function(){
-        $('.box.search-pc').stop().slideDown(500);
-    });
-    $('.box.search-pc').focusout(function(){
-        $('.box.search-pc').hide();
-    });
-
-
-
-    // 메뉴창 메뉴a. 아코디언 메뉴 제어
+    // 모바일헤더 메뉴창 메뉴a. 아코디언 메뉴 제어
     var status = 'off';
     $('.menu-li-title').on("click", function(){
 
@@ -51,24 +14,56 @@ $(document).ready(function(){
 
             status = 'off';
         }
+    });
 
+    
+    // 메뉴 패널창 관리
+    $('.menu-pannel').hide();
+    $('.menu-icon').click(function(){
+        $('.menu-pannel').show();
+    });
+    $('.menu-pannel .close-icon').click(function(){
+        $('.menu-pannel').hide();
+    });
+
+    //pc헤더 메뉴 제어
+    $('.submenu').hide();
+    $('.main-header.pc .menu>li').mouseover(function(){  
+        $('.menu-bg').stop().slideDown(500);     
+        $(this).find('.submenu').stop().slideDown(500);
+        $('.box.search-pc').hide();
+    }).mouseout(function(){
+        $('.menu-bg').stop().slideUp(500);
+        $(this).find('.submenu').stop().slideUp(500);
         
     });
 
-
-    $('.menu-pannel').css('transform','translateX(100%)');
-    $('.menu-icon').click(function(){
-        $('.menu-pannel').css('transform','translateX(0%)');
-    });
-    
-
-    $('.menu-pannel .close-icon').click(function(){
-        $('.menu-pannel').css('transform','translateX(100%)');
+    //예약페이지 제어
+    $('.reservation-m .close-light-icon').click(function(){
+        $('.reservation-m').hide();
     });
 
-    $('.menu-pannel .search-icon').click(function(){
-        $('.menu-pannel').css('transform','translateX(-100%)');
+    // 검색창 제어
+    $('.box.search').hide();
+    $('.header-menu .search-icon').mouseover(function(){
+        $('.box.search').stop().slideDown(500);
+    }).mouseout(function(){
+        $('.box.search').stop().slideUp(500);
     });
+
+
+    $('.box.search-pc').hide();
+    $('.nav.menu-2 .icons>.search-icon').click(function(){
+        $('.box.search-pc').stop().slideDown(500);
+    });
+
+    $('.box.search').scroll(function(){
+        $(this).hide();
+    });
+    $('.box.search-pc').scroll(function(){
+        $(this).hide();
+    });
+
 
 
 
@@ -112,5 +107,22 @@ $(document).ready(function(){
     //     $(this).css('background-color',);
     //     $(this).find('img').attr('src','images/icons-navigate-next.png');
     // });
+
+    
+
+    // $('.menu-pannel').css('transform','translateX(100%)');
+    // $('.menu-icon').click(function(){
+    //     $('.menu-pannel').css('transform','translateX(0%)');
+    // });
+    
+
+    // $('.menu-pannel .close-icon').click(function(){
+    //     $('.menu-pannel').css('transform','translateX(100%)');
+    // });
+
+    // $('.menu-pannel .search-icon').click(function(){
+    //     $('.menu-pannel').css('transform','translateX(-100%)');
+    // });
+
     
 });

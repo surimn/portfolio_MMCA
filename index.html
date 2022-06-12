@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>main_page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="default.css">
@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
+    <style>
+        
+    </style>
 </head>
 <body>
     <div class="main-page"> 
@@ -24,221 +26,306 @@
         <div class="main-header-box mobile">
             <!-- 모바일헤더 -->
             <header class="main-header mobile">
-                <a href="#" class="logo-kr-en">
-                    <img src="images/logo-kr-en@3x.png" srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x" alt="로고">
+              <a href="#" class="logo-kr-en">
+                <img
+                  src="images/logo-kr-en@3x.png"
+                  srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x"
+                  alt="로고"
+                />
+              </a>
+              <nav class="header-menu">
+                <a href="#" class="search-icon">
+                  <img
+                    class="icon-img"
+                    src="images/icons-search@3x.png"
+                    alt="검색아이콘"
+                  />
                 </a>
-                <nav class="header-menu">
-                    <a href="#" class="search-icon">
-                        <img  class="icon-img" src="images/icons-search@3x.png" alt="검색아이콘">
-                    </a>
-                    <a href="#" class="menu-icon">
-                        <img src="images/icons-menu.png" srcset="images/icons-menu@2x.png 2x, images/icons-menu@3x.png 3x"
-                            alt="메뉴아이콘">
-                    </a>
-                </nav>
+                <a href="#" class="menu-icon">
+                  <img
+                    src="images/icons-menu.png"
+                    srcset="images/icons-menu@2x.png 2x, images/icons-menu@3x.png 3x"
+                    alt="메뉴아이콘"
+                  />
+                </a>
+              </nav>
             </header>
             <!-- 검색창 -->
             <div class="box search">
-                <input class="input-search" type="text" placeholder="검색어를 입력하세요">
-                <button class="btn typeB-small" >검색</button>
+              <input
+                class="input-search"
+                type="text"
+                placeholder="검색어를 입력하세요"
+              />
+              <button class="btn typeB-small">검색</button>
             </div>
-                <!-- 메뉴 패널창 -->
+            <!-- 메뉴 패널창 -->
             <div class="menu-pannel">
-                <header class="main-header mobile">
-                    <a href="#" class="logo-kr-en">
-                        <img src="images/logo-kr-en.png" srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x" alt="로고">
-                    </a>
-                    <nav class="header-menu">
-                        <a href="#" class="search-icon">
-                            <img  src="images/icons-search@3x.png" alt="검색아이콘">
-                        </a>
-                        <a href="#" class="close-icon">
-                            <img src="images/icons-close.png" srcset="images/icons-close@2x.png 2x, images/icons-close@3x.png 3x"alt="닫기아이콘" >
-                        </a>
-                    </nav>
-                </header>
-                <ul class="menu a">
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">관람 참여
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add" onclick="">
-                        </a>
-                        <ul class="submenu">
-                            <li><a href="#">서울</a></li>
-                            <li><a href="#">과천</a></li>
-                            <li><a href="#">덕수궁</a></li>
-                            <li><a href="#">청주</a></li>
-                            <li><a href="#">어린이미술관</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a class="thiner" href="#">통합예약</a></li>
-                            <li><a class="thiner" href="#">전시해설</a></li>
-                            <li><a class="thiner" href="#">레지던시</a></li>
-                            <li><a class="thiner" href="#">미술은행</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">전시
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                        </a>
-                        <ul class="submenu ">
-                            <li><a href="#" class="submenu-link">현재전시</a></li>
-                            <li><a href="#" class="submenu-link">예정전시</a></li>
-                            <li><a href="#" class="submenu-link">과거전시</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">교육
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                        </a>
-                        <ul class="submenu ">
-                            <li><a href="#" class="submenu-link">미술관교육소개</a></li>
-                            <li><a href="#" class="submenu-link">어린이</a></li>
-                            <li><a href="#" class="submenu-link">청소년</a></li>
-                            <li><a href="#" class="submenu-link">교사</a></li>
-                            <li><a href="#" class="submenu-link">성인</a></li>
-                            <li><a href="#" class="submenu-link">교육자료실</a></li>
-                            <li><a href="#" class="submenu-link">참여신청</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">소장품
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                        </a>
-                        <ul class="submenu ">
-                            <li><a href="#" class="submenu-link">소장품 검색</a></li>
-                            <li><a href="#" class="submenu-link">소장품 탐색</a></li>
-                            <li><a href="#" class="submenu-link">보존과학</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">미술연구
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                        </a>
-                        <ul class="submenu ">
-                            <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
-                            <li><a href="#" class="submenu-link">연구</a></li>
-                            <li><a href="#" class="submenu-link">발간자료</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-li">
-                        <a href="#" class="menu-li-title">디지털미술관
-                            <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                        </a>
-                        <ul class="submenu ">
-                            <li><a href="#" class="submenu-link">메인</a></li>
-                            <li><a href="#" class="submenu-link">맞춤검색</a></li>
-                            <li><a href="#" class="submenu-link">오디오가이드</a></li>
-                            <li><a href="#" class="submenu-link">이용자갤러리</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="menu b">
-                    <li><a href="#">뉴스레터</a></li>
-                    <li><a href="#">소식지</a></li>
-                    <li><a href="#">새소식</a></li>
-                    <li><a href="#">온라인숍</a></li>
-                </ul>
-                <ul class="menu c">
-                    <li><a href="#">MMCA회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li>
-                        <label for="select">LANGUAGES:</label>
-                        <select name="lang" class="lang">
-                            <option value="kor">한국어</option>
-                            <option value="eng">ENGLISH</option>
-                            <option value="china">中文</option>
-                            <option value="jap">日本語</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 모바일 헤더 끝 -->
-        <!-- pc 헤더 시작 -->
-        <header class="main-header pc">
-            <a href="#" class="nav logo-img">
-                <img src="images/logo-img.png" srcset="images/logo-img@2x.png 2x, images/logo-img@3x.png 3x" alt="로고이미지">
-            </a>
-            <div class="menu-bg"></div>
-            <nav class="nav menu-1">
-                <ul class="menu">
-                    <li><a href="#" class="menu-link">관람•참여</a>
-                            <ul class="submenu">
-                                <li><a href="#" class="submenu-link">서울</a></li>
-                                <li><a href="#" class="submenu-link">과천</a></li>
-                                <li><a href="#" class="submenu-link">덕수궁</a></li>
-                                <li><a href="#" class="submenu-link">청주</a></li>
-                                <li><a href="#" class="submenu-link">어린이미술관</a></li>
-                                <li><a href="#" class="submenu-link">이벤트</a></li>
-                                <li><a href="#" class="submenu-link">통합예약</a></li>
-                                <li><a href="#" class="submenu-link">전시해설</a></li>
-                                <li><a href="#" class="submenu-link">레지던시</a></li>
-                                <li><a href="#" class="submenu-link">미술은행</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#" class="menu-link">전시</a>
-                            <ul class="submenu ">
-                                <li><a href="#" class="submenu-link">현재전시</a></li>
-                                <li><a href="#" class="submenu-link">예정전시</a></li>
-                                <li><a href="#" class="submenu-link">과거전시</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#" class="menu-link">교육</a>
-                            <ul class="submenu ">
-                                <li><a href="#" class="submenu-link">미술관교육소개</a></li>
-                                <li><a href="#" class="submenu-link">어린이</a></li>
-                                <li><a href="#" class="submenu-link">청소년</a></li>
-                                <li><a href="#" class="submenu-link">교사</a></li>
-                                <li><a href="#" class="submenu-link">성인</a></li>
-                                <li><a href="#" class="submenu-link">교육자료실</a></li>
-                                <li><a href="#" class="submenu-link">참여신청</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#" class="menu-link">소장품</a>
-                            <ul class="submenu ">
-                                <li><a href="#" class="submenu-link">소장품 검색</a></li>
-                                <li><a href="#" class="submenu-link">소장품 탐색</a></li>
-                                <li><a href="#" class="submenu-link">보존과학</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#" class="menu-link">미술연구</a>
-                            <ul class="submenu ">
-                                <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
-                                <li><a href="#" class="submenu-link">연구</a></li>
-                                <li><a href="#" class="submenu-link">발간자료</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#" class="menu-link">디지털미술관</a>
-                            <ul class="submenu ">
-                                <li><a href="#" class="submenu-link">메인</a></li>
-                                <li><a href="#" class="submenu-link">맞춤검색</a></li>
-                                <li><a href="#" class="submenu-link">오디오가이드</a></li>
-                                <li><a href="#" class="submenu-link">이용자갤러리</a></li>
-                            </ul>
-                    </li>
-                </ul>
-            </nav>
-            <p class="nav menu-2">
-                <select name="lang" class="lang">
+              <header class="main-header mobile">
+                <a href="#" class="logo-kr-en">
+                  <img
+                    src="images/logo-kr-en.png"
+                    srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x"
+                    alt="로고"
+                  />
+                </a>
+                <nav class="header-menu">
+                  <a href="#" class="search-icon">
+                    <img src="images/icons-search@3x.png" alt="검색아이콘" />
+                  </a>
+                  <a href="#" class="close-icon">
+                    <img
+                      src="images/icons-close.png"
+                      srcset="
+                        images/icons-close@2x.png 2x,
+                        images/icons-close@3x.png 3x
+                      "
+                      alt="닫기아이콘"
+                    />
+                  </a>
+                </nav>
+              </header>
+              <ul class="menu a">
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >관람 참여
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                      onclick=""
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#">서울</a></li>
+                    <li><a href="#">과천</a></li>
+                    <li><a href="#">덕수궁</a></li>
+                    <li><a href="#">청주</a></li>
+                    <li><a href="#">어린이미술관</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a class="thiner" href="#">통합예약</a></li>
+                    <li><a class="thiner" href="#">전시해설</a></li>
+                    <li><a class="thiner" href="#">레지던시</a></li>
+                    <li><a class="thiner" href="#">미술은행</a></li>
+                  </ul>
+                </li>
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >전시
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">현재전시</a></li>
+                    <li><a href="#" class="submenu-link">예정전시</a></li>
+                    <li><a href="#" class="submenu-link">과거전시</a></li>
+                  </ul>
+                </li>
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >교육
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">미술관교육소개</a></li>
+                    <li><a href="#" class="submenu-link">어린이</a></li>
+                    <li><a href="#" class="submenu-link">청소년</a></li>
+                    <li><a href="#" class="submenu-link">교사</a></li>
+                    <li><a href="#" class="submenu-link">성인</a></li>
+                    <li><a href="#" class="submenu-link">교육자료실</a></li>
+                    <li><a href="#" class="submenu-link">참여신청</a></li>
+                  </ul>
+                </li>
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >소장품
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">소장품 검색</a></li>
+                    <li><a href="#" class="submenu-link">소장품 탐색</a></li>
+                    <li><a href="#" class="submenu-link">보존과학</a></li>
+                  </ul>
+                </li>
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >미술연구
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
+                    <li><a href="#" class="submenu-link">연구</a></li>
+                    <li><a href="#" class="submenu-link">발간자료</a></li>
+                  </ul>
+                </li>
+                <li class="menu-li">
+                  <a href="#" class="menu-li-title"
+                    >디지털미술관
+                    <img
+                      src="images/icons-add-bold.png"
+                      alt="더하기 아이콘"
+                      class="icon-add"
+                    />
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">메인</a></li>
+                    <li><a href="#" class="submenu-link">맞춤검색</a></li>
+                    <li><a href="#" class="submenu-link">오디오가이드</a></li>
+                    <li><a href="#" class="submenu-link">이용자갤러리</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu b">
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">소식지</a></li>
+                <li><a href="#">새소식</a></li>
+                <li><a href="#">온라인숍</a></li>
+              </ul>
+              <ul class="menu c">
+                <li><a href="#">MMCA회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li>
+                  <label for="select">LANGUAGES:</label>
+                  <select name="lang" class="lang">
                     <option value="kor">한국어</option>
                     <option value="eng">ENGLISH</option>
                     <option value="china">中文</option>
                     <option value="jap">日本語</option>
-                </select>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <!-- 모바일 헤더 끝 -->
+        <!-- pc 헤더 시작 -->
+        <header class="main-header pc">
+            <a href="#" class="nav logo-img">
+              <img
+                src="images/logo-img.png"
+                srcset="images/logo-img@2x.png 2x, images/logo-img@3x.png 3x"
+                alt="로고이미지"
+              />
+            </a>
+            <div class="menu-bg"></div>
+            <nav class="nav menu-1">
+              <ul class="menu">
+                <li>
+                  <a href="#" class="menu-link">관람•참여</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">서울</a></li>
+                    <li><a href="#" class="submenu-link">과천</a></li>
+                    <li><a href="#" class="submenu-link">덕수궁</a></li>
+                    <li><a href="#" class="submenu-link">청주</a></li>
+                    <li><a href="#" class="submenu-link">어린이미술관</a></li>
+                    <li><a href="#" class="submenu-link">이벤트</a></li>
+                    <li><a href="#" class="submenu-link">통합예약</a></li>
+                    <li><a href="#" class="submenu-link">전시해설</a></li>
+                    <li><a href="#" class="submenu-link">레지던시</a></li>
+                    <li><a href="#" class="submenu-link">미술은행</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="menu-link">전시</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">현재전시</a></li>
+                    <li><a href="#" class="submenu-link">예정전시</a></li>
+                    <li><a href="#" class="submenu-link">과거전시</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="menu-link">교육</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">미술관교육소개</a></li>
+                    <li><a href="#" class="submenu-link">어린이</a></li>
+                    <li><a href="#" class="submenu-link">청소년</a></li>
+                    <li><a href="#" class="submenu-link">교사</a></li>
+                    <li><a href="#" class="submenu-link">성인</a></li>
+                    <li><a href="#" class="submenu-link">교육자료실</a></li>
+                    <li><a href="#" class="submenu-link">참여신청</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="menu-link">소장품</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">소장품 검색</a></li>
+                    <li><a href="#" class="submenu-link">소장품 탐색</a></li>
+                    <li><a href="#" class="submenu-link">보존과학</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="menu-link">미술연구</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
+                    <li><a href="#" class="submenu-link">연구</a></li>
+                    <li><a href="#" class="submenu-link">발간자료</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="menu-link">디지털미술관</a>
+                  <ul class="submenu">
+                    <li><a href="#" class="submenu-link">메인</a></li>
+                    <li><a href="#" class="submenu-link">맞춤검색</a></li>
+                    <li><a href="#" class="submenu-link">오디오가이드</a></li>
+                    <li><a href="#" class="submenu-link">이용자갤러리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav menu-2">
+              <select name="lang" class="lang">
+                <option value="kor">한국어</option>
+                <option value="eng">ENGLISH</option>
+                <option value="china">中文</option>
+                <option value="jap">日本語</option>
+              </select>
+              <nav class="icons">
                 <a href="#" class="search-icon">
-                    <img src="images/icons-search.png" srcset="images/icons-search@2x.png 2x, images/icons-search@3x.png 3x"
-                        alt="검색아이콘">
+                  <img
+                    src="images/icons-search.png"
+                    srcset="
+                      images/icons-search@2x.png 2x,
+                      images/icons-search@3x.png 3x
+                    "
+                    alt="검색아이콘"
+                  />
                 </a>
                 <a href="#" class="person-icon">
-                    <img src="images/icons-person.png" srcset="images/icons-person@2x.png 2x, images/icons-person@3x.png 3x"
-                        alt="개인아이콘">
+                  <img
+                    src="images/icons-person.png"
+                    srcset="
+                      images/icons-person@2x.png 2x,
+                      images/icons-person@3x.png 3x
+                    "
+                    alt="개인아이콘"
+                  />
                 </a>
-            </p>
+              </nav>
+            </div>
             <!-- 검색창 -->
             <div class="box search-pc">
-                <input class="input-search" type="text" placeholder="검색어를 입력하세요">
-                <button class="btn typeB-small" >검색</button>
+              <input
+                class="input-search"
+                type="text"
+                placeholder="검색어를 입력하세요"
+              />
+              <button class="btn typeB-small">검색</button>
             </div>
-        </header>
+          </header>
         <!-- pc 헤더  끝-->
     <!-- Components 01 :  메인 헤더  끝 -->  
   
@@ -277,244 +364,393 @@
     <!-- Components 02-1 : 메인베너 -->
         <main class="main-contents">
             <!-- Components 03 :  미술관 -->
-                <div class="container museum">
-                    <section class="content-box">
-                        <h2 class="sec-title">미술관</h2>
-                        <!-- 미술관 리스트 시작 -->
-                        <div class="content-container museum">
-                            <!-- 서울 -->
-                            <article class="content-item museum">
-                                <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place01_d.jpg)">
-                                    <img class="a11y-hidden" src="images/img_place01_d.jpg" alt="서울미술관">
-                                </figure>
-                                <figcaption>
-                                    <h3 class="content-title museum">서울</h3>
-                                    <p class="content-desc museum">
-                                        월요일, 화요일, 목요일, 금요일, 일요일 10:00-18:00<br>
-                                        수요일, 토요일 야간개장 10:00-21:00
-                                    </p>
-                                    <ul class="keywords">
-                                        <li class="keyword">전시</li>
-                                        <li class="keyword">필름앤비디오</li>
-                                        <li class="keyword">다다이즘</li>
-                                        <li class="keyword">이벤트</li>
-                                    </ul>
-                                </figcaption>
-                            </article>
-                            <!-- 과천 -->
-                            <article class="content-item museum">
-                                <figure class="content-thumb museum  a11y-hidden-bg" style="background-image: url(images/img_place02_d.jpg)">
-                                    <img class="a11y-hidden" src="images/img_place02_d.jpg" alt="과천미술관">
-                                </figure>
-                                <figcaption>
-                                    <h3 class="content-title museum">과천</h3>
-                                    <p class="content-desc museum">
-                                        화요일-일요일(월요일 휴관), 10:00-18:00
-                                    </p>
-                                    <ul class="keywords">
-                                        <li class="keyword">전시</li>
-                                        <li class="keyword">교육</li>
-                                        <li class="keyword">어린이미술관</li>
-                                        <li class="keyword">이벤트</li>
-                                    </ul>
-                                </figcaption>
-                            </article>
-                            <!-- 덕수궁 -->
-                            <article class="content-item museum">
-                                <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place03_d.jpg)">
-                                    <img class="a11y-hidden" src="images/img_place03_d.jpg" alt="덕수궁미술관">
-                                    <span class="keyword-closure">휴관</span>
-                                </figure>
-                                <figcaption>
-                                    <h3 class="content-title museum">덕수궁</h3>
-                                    <p class="content-desc museum">
-                                        오늘은 휴관일 입니다.
-                                    </p>
-                                    <ul class="keywords museum">
-                                        <li class="keyword">전시</li>
-                                    </ul>
-                                </figcaption>
-                            </article>                  
-                            <!-- 청주 -->
-                            <article class="content-item museum">
-                                <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place04_n.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_place04_n.jpeg" alt="청주미술관">
-                                </figure>
-                                <figcaption>
-                                    <h3 class="content-title museum">청주</h3>
-                                    <p class="content-desc museum">
-                                        화요일-일요일(월요일 휴관), 10:00-18:00
-                                    </p>
-                                    <ul class="keywords">
-                                        <li class="keyword">전시</li>
-                                        <li class="keyword">이벤트</li>
-                                    </ul>
-                                </figcaption>
-                            </article>
-                        </div>
-                    </section>
-                </div>
+            <div class="container">
+                <section class="content-box">
+                    <h2 class="sec-title">미술관</h2>
+                    <!-- 미술관 리스트 시작 -->
+                    <div class="content-container museum">
+                        <!-- 서울 -->
+                        <article class="content-item museum">
+                            <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place01_d.jpg)">
+                                <img class="a11y-hidden" src="images/img_place01_d.jpg" alt="서울미술관">
+                            </figure>
+                            <figcaption>
+                                <h3 class="content-title museum">서울</h3>
+                                <p class="content-desc museum">
+                                    월요일, 화요일, 목요일, 금요일, 일요일 10:00-18:00<br>
+                                    수요일, 토요일 야간개장 10:00-21:00
+                                </p>
+                                <ul class="keywords">
+                                    <li class="keyword">전시</li>
+                                    <li class="keyword">필름앤비디오</li>
+                                    <li class="keyword">다다이즘</li>
+                                    <li class="keyword">이벤트</li>
+                                </ul>
+                            </figcaption>
+                        </article>
+                        <!-- 과천 -->
+                        <article class="content-item museum">
+                            <figure class="content-thumb museum  a11y-hidden-bg" style="background-image: url(images/img_place02_d.jpg)">
+                                <img class="a11y-hidden" src="images/img_place02_d.jpg" alt="과천미술관">
+                            </figure>
+                            <figcaption>
+                                <h3 class="content-title museum">과천</h3>
+                                <p class="content-desc museum">
+                                    화요일-일요일(월요일 휴관), 10:00-18:00
+                                </p>
+                                <ul class="keywords">
+                                    <li class="keyword">전시</li>
+                                    <li class="keyword">교육</li>
+                                    <li class="keyword">어린이미술관</li>
+                                    <li class="keyword">이벤트</li>
+                                </ul>
+                            </figcaption>
+                        </article>
+                        <!-- 덕수궁 -->
+                        <article class="content-item museum">
+                            <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place03_d.jpg)">
+                                <img class="a11y-hidden" src="images/img_place03_d.jpg" alt="덕수궁미술관">
+                                <span class="keyword-closure">휴관</span>
+                            </figure>
+                            <figcaption>
+                                <h3 class="content-title museum">덕수궁</h3>
+                                <p class="content-desc museum">
+                                    오늘은 휴관일 입니다.
+                                </p>
+                                <ul class="keywords museum">
+                                    <li class="keyword">전시</li>
+                                </ul>
+                            </figcaption>
+                        </article>                  
+                        <!-- 청주 -->
+                        <article class="content-item museum">
+                            <figure class="content-thumb museum a11y-hidden-bg" style="background-image: url(images/img_place04_n.jpeg)">
+                                <img class="a11y-hidden" src="images/img_place04_n.jpeg" alt="청주미술관">
+                            </figure>
+                            <figcaption>
+                                <h3 class="content-title museum">청주</h3>
+                                <p class="content-desc museum">
+                                    화요일-일요일(월요일 휴관), 10:00-18:00
+                                </p>
+                                <ul class="keywords">
+                                    <li class="keyword">전시</li>
+                                    <li class="keyword">이벤트</li>
+                                </ul>
+                            </figcaption>
+                        </article>
+                    </div>
+                </section>
+            </div>
             <!-- Components 03 :  미술관 끝 -->
             <!-- Components04 : 전시소개-->
-
-
-
+            <div class="container exhibit">
+                <section class="content-box">
+                  <header class="sec-header">
+                    <h2 class="sec-title">전시</h2>
+                    <ul class="sec-navi exhibit">
+                      <li><a href="#" class="sec-navi-link exhibit">전체</a></li>
+                      <li><a href="#" class="sec-navi-link exhibit">서울</a></li>
+                      <li><a href="#" class="sec-navi-link exhibit">과천</a></li>
+                      <li><a href="#" class="sec-navi-link exhibit">덕수궁</a></li>
+                      <li><a href="#" class="sec-navi-link exhibit">청주</a></li>
+                      <li><a href="#" class="sec-navi-link exhibit">어린이미술관</a></li>
+                    </ul>
+                    <a href="#" class="more m">
+                      <span>더보기</span>
+                      <img
+                        src="images/icons-more.png"
+                        srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x"
+                        alt="더보기아이콘"
+                        style="width: 17px; height: 17px"
+                      />
+                    </a>
+                  </header>
+                  <!-- 자바스크립트로 처리하기 나중에 -->
+                  <div class="content-container exhibit">
+                    <!-- 1/ 시작 -->
+                    <article class="content-item exhibit">
+                      <figure
+                        class="content-thumb exhibit a11y-hidden-bg"
+                        style="background-image: url(images/img_exh01.png)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_exh01.png"
+                          alt="히토 슈타이얼"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title exhibit">서울</h4>
+                        <h3 class="content-title exhibit">
+                          히토 슈타이얼 - 데이터의 바다
+                        </h3>
+                        <p class="content-desc exhibit">2022-04-29~2022-09-18</p>
+                        <a class="audio-guide exhibit">
+                          <img
+                            src="images/icons-headphone.png"
+                            srcset="
+                              images/icons-headphone@2x.png 2x,
+                              images/icons-headphone@3x.png 3x
+                            "
+                            alt="오디오아이콘"
+                          />
+                          <span>오디오 가이드</span>
+                        </a>
+                      </figcaption>
+                    </article>
+                    <!-- 1/ 끝 -->
+                    <!-- 2/ 시작 -->
+                    <article class="content-item exhibit">
+                      <figure
+                        class="content-thumb exhibit a11y-hidden-bg"
+                        style="background-image: url(images/img_exh02.png)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_exh02.png"
+                          alt="가면무도회"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title exhibit">과천</h4>
+                        <h3 class="content-title exhibit">가면무도회</h3>
+                        <p class="content-desc exhibit">2022-04-13 ~ 2022-07-31</p>
+                        <a class="audio-guide exhibit">
+                          <img
+                            src="images/icons-headphone.png"
+                            srcset="
+                              images/icons-headphone@2x.png 2x,
+                              images/icons-headphone@3x.png 3x
+                            "
+                            alt="오디오아이콘"
+                          />
+                          <span>오디오 가이드</span>
+                        </a>
+                      </figcaption>
+                    </article>
+                    <!-- 2 끝-->
+                    <!-- 3/ 시작-->
+                    <article class="content-item exhibit">
+                      <figure
+                        class="content-thumb exhibit a11y-hidden-bg"
+                        style="background-image: url(images/img_exh03.png)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_exh03.png"
+                          alt="히토 슈타이얼"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title exhibit">서울</h4>
+                        <h3 class="content-title exhibit">나너의 기억</h3>
+                        <p class="content-desc exhibit">2022-04-08 ~ 2022-08-07</p>
+                        <a class="audio-guide exhibit">
+                          <img
+                            src="images/icons-headphone.png"
+                            srcset="
+                              images/icons-headphone@2x.png 2x,
+                              images/icons-headphone@3x.png 3x
+                            "
+                            alt="오디오아이콘"
+                          />
+                          <span>오디오 가이드</span>
+                        </a>
+                      </figcaption>
+                    </article>
+                    <!--3/ 끝-->
+                    <!-- 4/ 시작-->
+                    <article class="content-item exhibit">
+                      <figure
+                        class="content-thumb exhibit a11y-hidden-bg"
+                        style="background-image: url(images/img_exh04.png)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_exh04.png"
+                          alt="히토 슈타이얼"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title exhibit">청주</h4>
+                        <h3 class="content-title exhibit">
+                          MMCA 국제미술 소장품 기획전 «미술로, 세계로»
+                        </h3>
+                        <p class="content-desc exhibit">2022-01-20 ~ 2022-06-12</p>
+                        <a class="audio-guide exhibit">
+                          <img
+                            src="images/icons-headphone.png"
+                            srcset="
+                              images/icons-headphone@2x.png 2x,
+                              images/icons-headphone@3x.png 3x
+                            "
+                            alt="오디오아이콘"
+                          />
+                          <span>오디오 가이드</span>
+                        </a>
+                      </figcaption>
+                    </article>
+                    <!--4/ 끝-->
+                  </div>
+                </section>
+            </div>
             <!-- Components04 : 전시소개 끝-->
             <!-- Components 05 : 소장품 -->
-                <div class="container collec">
-                    <section class="content-box">
-                    
-                        <header class="sec-header">
-                            <h2 class="sec-title">소장품</h2> 
-                            <a href="#" class="more m">
-                                <span>더보기</span>
-                                <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
-                            </a>
-                        </header>
-                            <!-- 자바스크립트로 처리하기 나중에 -->
-                        <div class="content-container collec">
-                            <!-- 1/ 1910년대 ~ 1920년대 시작 -->
-                            <article class="content-item collec">
-                                <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec01.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_collec01.jpeg" alt="1910년대">
+            <div class="container collec">
+                <section class="content-box">
+                
+                    <header class="sec-header">
+                        <h2 class="sec-title">소장품</h2> 
+                        <a href="#" class="more m">
+                            <span>더보기</span>
+                            <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                        </a>
+                    </header>
+                        <!-- 자바스크립트로 처리하기 나중에 -->
+                    <div class="content-container collec">
+                        <!-- 1/ 1910년대 ~ 1920년대 시작 -->
+                        <article class="content-item collec">
+                            <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec01.jpeg)">
+                                <img class="a11y-hidden" src="images/img_collec01.jpeg" alt="1910년대">
+                            </figure>
+                            <figcaption class="content-desc collec">
+                                <p class="content-desc collec">
+                                    <span class="content-title collec">국립현대미술관 소장품 300</span>
+                                    <span>1910년대 ~ 1920년대</span> 
+                                </p>
+                            </figcaption>
+                        </article>
+                        <!-- 1/ 끝 -->
+                
+                        <!-- 2/ 시작 -->
+                        <article class="content-item collec">
+                            <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec02.jpeg)">
+                                <img class="a11y-hidden" src="images/img_collec02.jpeg" alt="1930년대">
+                            </figure>
+                            <figcaption>
+                                <p class="content-desc collec">
+                                    <span class="content-title collec">국립현대미술관 소장품 300</span>
+                                    <span>1930년대 ~ 1940년대</span> 
+                                </p>
+                            </figcaption>
+                        </article>
+                        <!-- 2 끝-->
+        
+                        <!-- 3/ 시작-->
+                        <article class="content-item collec">
+                            <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec03.JPG)">
+                                <img class="a11y-hidden" src="images/img_collec03.JPG" alt="1950년대">
+                            </figure>
+                            <figcaption>
+                                <p class="content-desc collec">
+                                    <span class="content-title collec">국립현대미술관 소장품 300</span>
+                                    <span>1950년대 ~ 1960년대</span> 
+                                </p>
+                            </figcaption>
+                        </article>
+                        <!--3/ 끝-->
+        
+                        <!-- 4/ 시작-->
+                        <article class="content-item collec">
+                            <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec04.jpeg)">
+                                <img class="a11y-hidden" src="images/img_collec04.jpeg" alt="1970년대">
+                            </figure>
+                            <figcaption>
+                                <p class="content-desc collec">
+                                    <span class="content-title collec">국립현대미술관 소장품 300</span>
+                                    <span>1970년대 ~ 1980년대</span> 
+                                </p>
+                            </figcaption>
+                        </article>
+                        <!--4/ 끝-->
+                    </div>
+                </section>
+            </div>
+            <!-- Components 05 : 소장품 끝 --> 
+            <!-- Components 06 : 디지털미술관 -->
+            <div class="container digital">
+                <section class="content-box">  
+                    <!-- 섹션헤더  시작-->
+                    <header class="sec-header">
+                        <h2 class="sec-title">디지털 미술관</h2> 
+                        <a href="#" class="more m">
+                            <span>더보기</span>
+                            <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                        </a>
+                    </header>
+                    <!-- 섹션헤더 끝 -->
+                    <!-- 디지털 미술관 시작 -->
+                    <div class="visible-box digital">
+                        <div class="content-container digital">
+                            <!-- 1/ 시작 -->
+                            <article class="content-item digital ">
+                                <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital01.jpeg)">
+                                    <img class="a11y-hidden" src="images/img_digital01.jpeg" alt="mmca tv- 김지민">
                                 </figure>
-                                <figcaption class="content-desc collec">
-                                    <p class="content-desc collec">
-                                        <span class="content-title collec">국립현대미술관 소장품 300</span>
-                                        <span>1910년대 ~ 1920년대</span> 
-                                    </p>
+                                <figcaption>
+                                    <h4 class="content-sub-title-2">MMCA TV</h4>
+                                    <h3 class="content-title digital">
+                                        [청소년 온라인 워크숍]에듀케이터의 실험실 #라벨 #김지민
+                                    </h3>
                                 </figcaption>
                             </article>
                             <!-- 1/ 끝 -->
-                    
                             <!-- 2/ 시작 -->
-                            <article class="content-item collec">
-                                <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec02.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_collec02.jpeg" alt="1930년대">
+                            <article class="content-item digital ">
+                                <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital02.jpeg)">
+                                    <img class="a11y-hidden" src="images/img_digital02.jpeg" alt="1930년대">
                                 </figure>
                                 <figcaption>
-                                    <p class="content-desc collec">
-                                        <span class="content-title collec">국립현대미술관 소장품 300</span>
-                                        <span>1930년대 ~ 1940년대</span> 
-                                    </p>
+                                    <h4 class="content-sub-title-2">MMCA TV</h4>
+                                    <h3 class="content-title digital">
+                                        2022 국립현대미술관 미술은행 프로젝트<br>
+                                        «공공 x 김보희»
+                                    </h3>
                                 </figcaption>
                             </article>
                             <!-- 2 끝-->
-            
                             <!-- 3/ 시작-->
-                            <article class="content-item collec">
-                                <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec03.JPG)">
-                                    <img class="a11y-hidden" src="images/img_collec03.JPG" alt="1950년대">
+                            <article class="content-item digital ">
+                                <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital03.png)">
+                                    <img class="a11y-hidden" src="images/img_digital03.png" alt="1950년대">
                                 </figure>
                                 <figcaption>
-                                    <p class="content-desc collec">
-                                        <span class="content-title collec">국립현대미술관 소장품 300</span>
-                                        <span>1950년대 ~ 1960년대</span> 
-                                    </p>
+                                    <h4 class="content-sub-title-2">MMCA TV</h4>
+                                    <h3 class="content-title digital">
+                                        [오늘, 이 작품] 빅토르 바사렐리<br>
+                                        Victor VASARELY ‹게자›, 1983
+                                    </h3>
                                 </figcaption>
                             </article>
                             <!--3/ 끝-->
-            
-                            <!-- 4/ 시작-->
-                            <article class="content-item collec">
-                                <figure class="content-thumb collec a11y-hidden-bg" style="background-image: url(images/img_collec04.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_collec04.jpeg" alt="1970년대">
-                                </figure>
-                                <figcaption>
-                                    <p class="content-desc collec">
-                                        <span class="content-title collec">국립현대미술관 소장품 300</span>
-                                        <span>1970년대 ~ 1980년대</span> 
-                                    </p>
-                                </figcaption>
-                            </article>
-                            <!--4/ 끝-->
                         </div>
-                    </section>
-                </div>
-            <!-- Components 05 : 소장품 끝 --> 
-            <!-- Components 06 : 디지털미술관 -->
-                <div class="container digital">
-                    <section class="content-box">  
-                        <!-- 섹션헤더  시작-->
-                        <header class="sec-header">
-                            <h2 class="sec-title">디지털 미술관</h2> 
-                            <a href="#" class="more m">
-                                <span>더보기</span>
-                                <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
+                    </div>
+        
+        
+                    <!-- 디지털 미술관 끝 -->
+                    <!-- 네비게이션 시작 -->
+                    <div class="navigation digital">
+                        <a href="#" class="before-icon">
+                            <img src="images/icons-navigate-before.png" srcset="images/icons-navigate-before@2x.png 2x, images/icons-navigate-before@3x.png 3x" alt="이전아이콘">
+                        </a>
+                        <div class="indicators">
+                            <a href="#" class="indicator-active">
+                                <img src="images/elements-indicator-active.png" srcset="images/elements-indicator-active@2x.png 2x, images/elements-indicator-active@3x.png 3x">
                             </a>
-                        </header>
-                        <!-- 섹션헤더 끝 -->
-                        <!-- 디지털 미술관 시작 -->
-                        <div class="visible-box digital">
-                            <div class="content-container digital">
-                                <!-- 1/ 시작 -->
-                                <article class="content-item digital tv1">
-                                    <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital01.jpeg)">
-                                        <img class="a11y-hidden" src="images/img_digital01.jpeg" alt="mmca tv- 김지민">
-                                    </figure>
-                                    <figcaption>
-                                        <h4 class="content-sub-title-2">MMCA TV</h4>
-                                        <h3 class="content-title digital">
-                                            [청소년 온라인 워크숍]에듀케이터의 실험실 #라벨 #김지민
-                                        </h3>
-                                    </figcaption>
-                                </article>
-                                <!-- 1/ 끝 -->
-                                <!-- 2/ 시작 -->
-                                <article class="content-item digital tv2">
-                                    <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital02.jpeg)">
-                                        <img class="a11y-hidden" src="images/img_digital02.jpeg" alt="1930년대">
-                                    </figure>
-                                    <figcaption>
-                                        <h4 class="content-sub-title-2">MMCA TV</h4>
-                                        <h3 class="content-title digital">
-                                            2022 국립현대미술관 미술은행 프로젝트<br>
-                                            «공공 x 김보희»
-                                        </h3>
-                                    </figcaption>
-                                </article>
-                                <!-- 2 끝-->
-                                <!-- 3/ 시작-->
-                                <article class="content-item digital tv3">
-                                    <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital03.png)">
-                                        <img class="a11y-hidden" src="images/img_digital03.png" alt="1950년대">
-                                    </figure>
-                                    <figcaption>
-                                        <h4 class="content-sub-title-2">MMCA TV</h4>
-                                        <h3 class="content-title digital">
-                                            [오늘, 이 작품] 빅토르 바사렐리<br>
-                                            Victor VASARELY ‹게자›, 1983
-                                        </h3>
-                                    </figcaption>
-                                </article>
-                                <!--3/ 끝-->
-                            </div>
-                        </div>
-            
-                        <!-- 디지털 미술관 끝 -->
-                        <!-- 네비게이션 시작 -->
-                        <div class="navigation digital">
-                            <a href="#" class="before-icon">
-                                <img src="images/icons-navigate-before.png" srcset="images/icons-navigate-before@2x.png 2x, images/icons-navigate-before@3x.png 3x" alt="이전아이콘">
+                            <a href="#" class="indicator-normal">
+                                <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
                             </a>
-                            <div class="indicators">
-                                <a href="#" class="indicator-active">
-                                    <img src="images/elements-indicator-active.png" srcset="images/elements-indicator-active@2x.png 2x, images/elements-indicator-active@3x.png 3x">
-                                </a>
-                                <a href="#" class="indicator-normal">
-                                    <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
-                                </a>
-                                <a href="#" class="indicator-normal">
-                                    <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
-                                </a>
-                            </div>
-                            <a href="#" class="next-icon">
-                                <img src="images/icons-navigate-next.png" srcset="images/icons-navigate-next@2x.png 2x, images/icons-navigate-next@3x.png 3x" alt="다음아이콘">
+                            <a href="#" class="indicator-normal">
+                                <img src="images/elements-indicator-normal.png" srcset="images/elements-indicator-normal@2x.png 2x, images/elements-indicator-normal@3x.png 3x">
                             </a>
                         </div>
-                        <!-- 네비게이션 끝 -->
-                    </section>
-                </div>
+                        <a href="#" class="next-icon">
+                            <img src="images/icons-navigate-next.png" srcset="images/icons-navigate-next@2x.png 2x, images/icons-navigate-next@3x.png 3x" alt="다음아이콘">
+                        </a>
+                    </div>
+                    <!-- 네비게이션 끝 -->
+                </section>
+            </div>
             <!-- Components 06 : 디지털미술관 -->
         </main>
 
@@ -522,61 +758,86 @@
         <div class="box-news">
             <!-- Components 07 : 서비스 -->
             <div class="container service">
-                <section class="content-box service">  
-                    <!-- 섹션헤더  시작-->
-                    <header class="sec-header service">
-                        <h2 class="sec-title service">MMCA 하는일</h2> 
-                    </header>
-                    <!-- 섹션헤더 끝 -->
-
-                    <div class="visible-box">
-                        <div class="content-container service">
-                            <!-- 1/ 시작 -->
-                            <article class="content-item service">
-                                <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link01.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_link01.jpeg" alt="미술은행">
-                                </figure>
-                                <figcaption>
-                                    <h4 class="content-sub-title service">미술은행</h4>
-                                </figcaption>
-                            </article>
-                            <!-- 1/ 끝 -->
-                            <!-- 2/ 시작 -->
-                            <article class="content-item service">
-                                <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link02.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_link02.jpeg" alt="레지던시">
-                                </figure>
-                                <figcaption>
-                                    <h4 class="content-sub-title service">레지던시</h4>
-                                </figcaption>
-                            </article>
-                            <!-- 2/ 끝 -->
-                            <!-- 3/ 시작 -->
-                            <article class="content-item service">
-                                <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link03.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_link03.jpeg" alt="도서와 아카이브">
-                                </figure>
-                                <figcaption>
-                                    <h4 class="content-sub-title service">도서와 아카이브</h4>
-                                </figcaption>
-                            </article>
-                            <!-- 3/ 끝 -->
-                            <!-- 4/ 시작 -->
-                            <article class="content-item service">
-                                <figure class="content-thumb service a11y-hidden-bg" style="background-image: url(images/img_link04.jpeg)">
-                                    <img class="a11y-hidden" src="images/img_link04.jpeg" alt="어린이미술관">
-                                </figure>
-                                <figcaption>
-                                    <h4 class="content-sub-title service">어린이 미술관</h4>
-                                </figcaption>
-                            </article>
-                            <!-- 4/ 끝 -->
-                        </div>
-                    </div>   
+                <section class="content-box service">
+                  <!-- 섹션헤더  시작-->
+                  <header class="sec-header service">
+                    <h2 class="sec-title service">MMCA 하는일</h2>
+                  </header>
+                  <!-- 섹션헤더 끝 -->
+                  <div class="content-container service">
+                    <!-- 1/ 시작 -->
+                    <article class="content-item service">
+                      <figure
+                        class="content-thumb service a11y-hidden-bg"
+                        style="background-image: url(images/img_link01.jpeg)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_link01.jpeg"
+                          alt="미술은행"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title service">미술은행</h4>
+                      </figcaption>
+                    </article>
+                    <!-- 1/ 끝 -->
+                    <!-- 2/ 시작 -->
+                    <article class="content-item service">
+                      <figure
+                        class="content-thumb service a11y-hidden-bg"
+                        style="background-image: url(images/img_link02.jpeg)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_link02.jpeg"
+                          alt="레지던시"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title service">레지던시</h4>
+                      </figcaption>
+                    </article>
+                    <!-- 2/ 끝 -->
+                    <!-- 3/ 시작 -->
+                    <article class="content-item service">
+                      <figure
+                        class="content-thumb service a11y-hidden-bg"
+                        style="background-image: url(images/img_link03.jpeg)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_link03.jpeg"
+                          alt="도서와 아카이브"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title service">도서와 아카이브</h4>
+                      </figcaption>
+                    </article>
+                    <!-- 3/ 끝 -->
+                    <!-- 4/ 시작 -->
+                    <article class="content-item service">
+                      <figure
+                        class="content-thumb service a11y-hidden-bg"
+                        style="background-image: url(images/img_link04.jpeg)"
+                      >
+                        <img
+                          class="a11y-hidden"
+                          src="images/img_link04.jpeg"
+                          alt="어린이미술관"
+                        />
+                      </figure>
+                      <figcaption>
+                        <h4 class="content-sub-title service">어린이 미술관</h4>
+                      </figcaption>
+                    </article>
+                    <!-- 4/ 끝 -->
+                  </div>
                 </section>
-            </div>
-        <!-- Components 07 : 서비스 -->
-        <!-- Components 08 : 뉴스레터 -->
+              </div>
+            <!-- Components 07 : 서비스 -->
+            <!-- Components 08 : 뉴스/ 뉴스레터  -->
             <div class="container news">
                 <section class="content-box newsletter">  
                     <!-- 섹션헤더  시작-->
@@ -607,20 +868,20 @@
                                     <img class="a11y-hidden" src="images/news02.png" alt="뉴스레터">
                                 </figure>
                                 <figcaption>
-                                    <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                                    <h4 class="content-sub-title newsletter">미술관플러스</h4>
                                     <h3 class="content-title newsletter">
-                                        디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                        국립현대미술관 외국인 서포터즈 함께...
                                     </h3>
                                 </figcaption>
                             </article>
                             <article class="content-item newsletter">
-                                <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news03.png)">
-                                    <img class="a11y-hidden" src="images/news03.png" alt="뉴스레터">
+                                <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news05.png)">
+                                    <img class="a11y-hidden" src="images/news05.png" alt="뉴스레터">
                                 </figure>
                                 <figcaption>
                                     <h4 class="content-sub-title newsletter">전시 포커스</h4>
                                     <h3 class="content-title newsletter">
-                                        디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                        삶을 껴안고 다독이던 채색화, 한국의 ...
                                     </h3>
                                 </figcaption>
                             </article>
@@ -629,9 +890,9 @@
                                     <img class="a11y-hidden" src="images/news04.png" alt="뉴스레터">
                                 </figure>
                                 <figcaption>
-                                    <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                                    <h4 class="content-sub-title newsletter">소장품 더보기</h4>
                                     <h3 class="content-title newsletter">
-                                        디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                        단단한 껍질을 깨고 혼불을 밝히다.하.. 
                                     </h3>
                                 </figcaption>
                             </article>
@@ -672,7 +933,7 @@
                     </div>
                     <!-- 네비게이션 끝 -->
                 </section>
-                
+            
                 <div class="binding-box news">
                     <section class="content-box newsletter-subs">  
                         <!-- 섹션헤더  시작-->
@@ -703,7 +964,7 @@
                         <div class="content-container news">
                             <table class="content-item news">
                                 <tr><td><a>국립현대미술관 소식지 9호 표지촬영 안내</a></td></tr>
-                                <tr><td><a>2022년 현충일 기념 미술관 정상개관 및 대체휴관일 ...</a></td></tr>
+                                <tr><td><a>국립현대미술관 청주 특별수장고 «국립현대미술관 드로잉 소장품» 운영 재개</a></td></tr>
                                 <tr><td><a>과천관 하늘정원, 원형정원, 옥상정원 출입 제한 안내</a></td></tr>
                             </table>
                         </div>
@@ -712,67 +973,67 @@
                 </div>
         
             </div>
+            <!-- Components 08 : 뉴스/ 뉴스레터  -->
         </div>
-        <div class="bg-please"></div>
-        <div class="bg-please-2"></div>
+        <div class="bg- grid-1"></div>
+        <div class="bg- grid-2"></div>
 
         <!-- Components 09 :  푸터 -->
-        <footer class="footer">
-            <div class="links-box">
-            <div class="links-container m1">
-                <ul class="links social">
-                    <li class="links-head">소셜</li>
-                    <li><a href="#">인스타그램</a></li>
-                    <li><a href="#">유튜브</a></li>
-                    <li><a href="#">페이스북</a></li>
-                    <li><a href="#">트위터</a></li>
-                    <li><a href="#">인스타그램</a></li>
-                </ul>
-                <ul class="links notice">
-                    <li class="links-head">법적고지</li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">저작권정책</a></li>
-                    <li><a href="#">국민신문고</a></li>
-                    <li><a href="#">정보공개</a></li>
-                    <li><a href="#">불편부조리신고</a></li>
-                </ul>
-                <ul class="links etc">
-                    <li class="links-head">참여</li>
-                    <li><a href="#">미술관 소개</a></li>
-                    <li><a href="#">채용</a></li>
-                    <li><a href="#">보도자료</a></li>
-                    <li><a href="#">후원</a></li>
-                    <li><a href="#">MMCA 프렌즈</a></li>
-                    <li><a href="#">자원봉사</a></li>
-                    <li><a href="#">시설대관/복제신청</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">사이트맵</a></li>
-                    <li><a href="#">국립현대미술관 문화재단</a></li>
-                </ul>
+   <div class="footer">
+       <div class="links-box">
+        <div class="links-container m1">
+            <ul class="links social">
+                 <li class="links-head">소셜</li>
+                <li><a href="#">인스타그램</a></li>
+                <li><a href="#">유튜브</a></li>
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">트위터</a></li>
+                <li><a href="#">인스타그램</a></li>
+            </ul>
+            <ul class="links notice">
+                  <li class="links-head">법적고지</li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">저작권정책</a></li>
+                <li><a href="#">국민신문고</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">불편부조리신고</a></li>
+            </ul>
+            <ul class="links etc">
+                  <li class="links-head">참여</li>
+                <li><a href="#">미술관 소개</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">후원</a></li>
+                <li><a href="#">MMCA 프렌즈</a></li>
+                <li><a href="#">자원봉사</a></li>
+                <li><a href="#">시설대관/복제신청</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">국립현대미술관 문화재단</a></li>
+            </ul>
+        </div>
+        <div class="links-container m2">
+            <a href="#" class="logo-img">
+                <img src="images/logo-img.png" srcset="images/logo-img@2x.png 2x, images/logo-img@3x.png 3x" alt="mmca로고">
+            </a>
+            <div class="links-sites">
+                <a href="#" class="site-newsletter">소식지</a>
+                <a href="#" class="site-shop">온라인숍</a>
+                <a href="#" class="site-membership">멤버쉽</a>
             </div>
-            <div class="links-container m2">
-                <a href="#" class="logo-img">
-                    <img src="images/logo-img.png" srcset="images/logo-img@2x.png 2x, images/logo-img@3x.png 3x" alt="mmca로고">
-                </a>
-                <div class="links-sites">
-                    <a href="#" class="site-newsletter">소식지</a>
-                    <a href="#" class="site-shop">온라인숍</a>
-                    <a href="#" class="site-membership">멤버쉽</a>
-                </div>
-            </div>
-            </div>
-            <div class="info">
-                <p class="info-desc">
-                    대표자: 윤범모, 사업자등록번호: 138‒83‒00313<br>대표전화: (서울) 02‒3701‒9500, (과천) 02‒2188‒6000, (덕수궁) 02‒2022‒0600, (청주) 043‒261‒1400 
-                </p>
-        
-                <small class="copyright">
-                &copy; 2021 National Museum of Modern and Contemporary Art, Korea
-                </small>
-            </div>
-        
-        </footer>
+        </div>
+       </div>
+       <div class="info">
+            <p class="info-desc">
+                대표자: 윤범모, 사업자등록번호: 138‒83‒00313<br>대표전화: (서울) 02‒3701‒9500, (과천) 02‒2188‒6000, (덕수궁) 02‒2022‒0600, (청주) 043‒261‒1400 
+            </p>
+    
+           <small class="copyright">
+            &copy; 2021 National Museum of Modern and Contemporary Art, Korea
+           </small>
+       </div>
+   </div>
         <!-- Components 09 :  푸터 -->
     </div>
 

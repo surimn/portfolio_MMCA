@@ -1,8 +1,13 @@
-.menu-pannel{
-    z-index: 99;
+body{
+	overflow-x: hidden;
 }
 .main-page{
 	overflow: hidden;
+}
+.main-contents{
+	overflow: hidden;
+	padding: 0 20px;
+	
 }
 .footer{
 	padding: 50px 0;
@@ -10,11 +15,10 @@
 .main-header.pc{
 	display: none;
 }
+.reservation-m{
+	padding: 0 20px;
+  }
 @media (min-width: 360px) {
-	.main-contents{
-		width: 100vw;
-		padding: 0 20px;
-	}
 	.container{
 		padding: 40px 0px;
 	}
@@ -28,12 +32,8 @@
 	.sec-header.service{
 		padding: 0 20px;
 	}
-	.content-container.service{
-		padding-left: 20px;
-	}
-	.menu-pannel{
-		padding: 0 20px;
-	}
+
+
 
 }
 
@@ -60,8 +60,8 @@
 			'reservation-m         	reservation-m        	reservation-m	'
 			'hero-banner        	hero-banner        		hero-banner	  	'
 			' .      				main-contents        		.			'
-			' .   			 		box-news    				.			'
-			' .        				footer          			.			'
+			' grid-1     			box-news       			grid-2			'
+			' footer        		footer          		footer '
 	}
 
 	.main-header.pc {
@@ -76,52 +76,25 @@
 	.main-contents {
 		grid-area: main-contents;
 	}
-	.container.museum {
-		grid-area: museum;
-	}
-	.container.collec {
-		grid-area: collec;
-	}
-	.container.digital {
-		grid-area: digital;
-	}
-	.container.service {
-		grid-area: service;
-	}
-	
-	
-
 	.box-news{
 		grid-area: box-news;
-		background-color: #fff;	
-		grid-column:2/3;
-		grid-rows: 5/6;
-		
-		z-index: 999;
 	}
-	.bg-please{
+	.bg-{
 		background-color: #bfbfbf;
-		width: 100%;
-		height: 100%;
-		grid-column:1/2;
-		grid-row: 5/7;
+	}
+	.bg-.grid-1{
+		grid-area: grid-1;
+	
 
 	}
-	.bg-please-2{
-		background-color: #bfbfbf;
-		width: 100%;
-		height: 100%;
-		grid-column:3/4;
-		grid-row: 5/7;
+	.bg-.grid-2{
+		grid-area: grid-2;
+		/* grid-column:3/4;
+		grid-row: 5/6; */
 	}
 	.footer{
 		grid-area: footer;
-		width: 100vw;
 		background-color: #bfbfbf;	
 	}
-	.footer {
-		width: calc(1600/1900*100vw);
-		margin: 0 auto; 
-	}
-} 
+}
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>ui05_collection</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="default.css">
@@ -23,7 +23,6 @@
             margin-top: 0.5em;
             display: flex;
             flex-direction: column;
-
        }
        .content-desc.collec span:nth-child(1){
            display: none;
@@ -32,6 +31,12 @@
        .content-desc.collec span:nth-child(2){
            opacity: 0.5;
            font-weight: bold;
+       }
+       @media (min-width:768px) {
+        .content-thumb.collec{
+           height: calc(110/768*100vw);
+       }
+
        }
        @media (min-width:1080px) {
         .content-thumb.collec{

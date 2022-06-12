@@ -1,314 +1,386 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
     <title>ui01</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="default.css" />
+    <!-- <link rel="stylesheet" href="ui.css" /> -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .main-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        /* ui.css 로 */
-    
-        /* 모바일 헤더 */
-        .main-header.mobile {
-            height: 60px;
-        }
-        .header-menu {
-            display: flex;
-            align-items: center;
-        }
-        .logo-kr-en {
-            width: 170px;
-            height: 40px;
-        }
-
-        .search-icon,
-        .menu-icon,
-        .person-icon 
-        .close-icon{
-            width: 24px;
-            height: 24px;
-            margin-left: 10px;
-        }
-
-        /* 검색창 */
-        .box.search{
-            display: flex;
-            align-items: center;
-            height: 60px;
-            border-bottom: 1px solid #222;
-        }
-        .box.search .btn{
-            width: calc(216/1080*100%);
-        }
-        .box.search .input-search{
-            width: 80%;
-            border: none;
-        }
-        .btn.typeB-small{
-            display: block;
-            width: 100%;
-            height: 30px;
-            background-color: #fff;
-            color: #222;
-            border: 1px solid #222;
-            text-align: center;
-            font-size: calc(14/16*1rem);
-            border-radius: 1.2em;
-        }
-        .btn.typeB-small:focus{
-            background-color: #222;
-            color: #fff;
-        }
-       .input-search:focus{
-            outline: none;
-        }
-
-
-        /* 메뉴 패널창 */
-        .menu-pannel{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .menu-pannel .close-icon{
-            margin-left: 10px;
-        }
-        .menu-li{
-            line-height: 50px;
-            align-items: center;
-            justify-content: space-between;
-            font-size: calc(21/16*1rem);
-            font-weight: bold;
-        }
-        .menu-li-title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .icons-add{
-            width: 16px;height: 16px;
-        }
-
-        .menu-pannel .submenu{
-            display: flex;
-            flex-direction: column;
-            font-size: calc(18/16*1rem);
-            line-height: 30px;
-            border-top: 1px solid #222;
-        }
-        .menu-pannel .submenu li{
-            line-height: 40px;
-        }
-        .menu-pannel .submenu li a{
-            display: block;
-        }
-        .menu-pannel .submenu li a:hover{
-            background-color: #222;
-            font-weight: bolder;
-            color: #fff;
-            transition: 0.3s;
-        }
-        [class='thiner']{
-            font-weight: 300;
-        }
-        .menu-pannel .menu{
-            border-top: 2px solid #222;
-        }
-        .menu.b{
-            padding: 20px 0;
-        }
-        .menu.b li a{
-            line-height: 30px;
-            font-size: calc(18/16*1rem);
-            font-weight: bold;
-            display: block;
-            width: 100%;
-        }
-        .menu.c{
-            padding: 20px 0;
-        }
-        .menu.c li a{
-            line-height: 30px;
-            font-weight: bold;
-            font-size: calc(18/16*1rem);
-            font-weight: bold;
-            display: block;
-            width: 100%;
-        }
-        .menu.c li:last-child{
-            margin-top: 50px;
-        }
-        .menu.c .lang{
-            border: none;
-            text-align: center;
-        }
-
-        @media (min-width:768px) {
-            
-        }
+      .main-header-box {
+        width: 100%;
+        height: 60px;
+      }
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .main-header.mobile {
+        width: 100vw;
+        height: 60px;
+        padding: 0 20px;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background: #fff;
+      }
+      .header-menu {
+        display: flex;
+        align-items: center;
+      }
+      .logo-kr-en {
+        width: 170px;
+        height: 40px;
+      }
+      .search-icon,
+      .menu-icon,
+      .person-icon .close-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+      }
+      /* 검색창 */
+      .box.search {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        height: 60px;
+        border-bottom: 1px solid #222;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+        padding: 0 20px;
+        background-color: #fff;
+      }
+      .box.search .btn {
+        width: calc(216 / 1080 * 100%);
+      }
+      .box.search .input-search {
+        width: 80%;
+        border: none;
+      }
+      .btn.typeB-small {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-color: #fff;
+        color: #222;
+        border: 1px solid #222;
+        text-align: center;
+        font-size: calc(14 / 16 * 1rem);
+        border-radius: 1.2em;
+      }
+      .btn.typeB-small:focus {
+        background-color: #222;
+        color: #fff;
+      }
+      .input-search:focus {
+        outline: none;
+      }
+      /* 메뉴 패널창 */
+      .menu-pannel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+      .menu-pannel .main-header.mobile {
+        width: 100vw;
+        position: fixed;
+        background-color: #fff;
+      }
+      .menu-pannel .close-icon {
+        margin-left: 10px;
+      }
+      .menu-li {
+        line-height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(21 / 16 * 1rem);
+        font-weight: bold;
+      }
+      .menu-li-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .icons-add {
+        width: 16px;
+        height: 16px;
+      }
+      .menu-pannel .submenu {
+        display: flex;
+        flex-direction: column;
+        font-size: calc(18 / 16 * 1rem);
+        line-height: 30px;
+        border-top: 1px solid #222;
+      }
+      .menu-pannel .submenu li {
+        line-height: 40px;
+      }
+      .menu-pannel .submenu li a {
+        display: block;
+      }
+      .menu-pannel .submenu li a:hover {
+        background-color: #222;
+        font-weight: bolder;
+        color: #fff;
+        transition: 0.3s;
+      }
+      [class="thiner"] {
+        font-weight: bolder;
+        font-size: 1.1em;
+      }
+      .menu-pannel .menu {
+        border-top: 2px solid #222;
+        padding: 0 20px;
+      }
+      .menu.a {
+        margin-top: 60px;
+      }
+      .menu.b {
+        padding: 20px;
+      }
+      .menu.b li a {
+        line-height: 30px;
+        font-size: calc(18 / 16 * 1rem);
+        font-weight: bold;
+        display: block;
+        width: 100%;
+      }
+      .menu.c {
+        padding: 20px;
+      }
+      .menu.c li a {
+        line-height: 30px;
+        font-weight: bold;
+        font-size: calc(18 / 16 * 1rem);
+        font-weight: bold;
+        display: block;
+        width: 100%;
+      }
+      .menu.c li:last-child {
+        margin-top: 50px;
+      }
+      .menu.c .lang {
+        border: none;
+        text-align: center;
+      }
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 모바일 헤더  -->
     <div class="main-header-box mobile">
-        <!-- 모바일헤더 -->
+      <!-- 모바일헤더 -->
+      <header class="main-header mobile">
+        <a href="#" class="logo-kr-en">
+          <img
+            src="images/logo-kr-en@3x.png"
+            srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x"
+            alt="로고"
+          />
+        </a>
+        <nav class="header-menu">
+          <a href="#" class="search-icon">
+            <img
+              class="icon-img"
+              src="images/icons-search@3x.png"
+              alt="검색아이콘"
+            />
+          </a>
+          <a href="#" class="menu-icon">
+            <img
+              src="images/icons-menu.png"
+              srcset="images/icons-menu@2x.png 2x, images/icons-menu@3x.png 3x"
+              alt="메뉴아이콘"
+            />
+          </a>
+        </nav>
+      </header>
+      <!-- 검색창 -->
+      <div class="box search">
+        <input
+          class="input-search"
+          type="text"
+          placeholder="검색어를 입력하세요"
+        />
+        <button class="btn typeB-small">검색</button>
+      </div>
+      <!-- 메뉴 패널창 -->
+      <div class="menu-pannel">
         <header class="main-header mobile">
-            <a href="#" class="logo-kr-en">
-                <img src="images/logo-kr-en@3x.png" srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x" alt="로고">
+          <a href="#" class="logo-kr-en">
+            <img
+              src="images/logo-kr-en.png"
+              srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x"
+              alt="로고"
+            />
+          </a>
+          <nav class="header-menu">
+            <a href="#" class="search-icon">
+              <img src="images/icons-search@3x.png" alt="검색아이콘" />
             </a>
-            <nav class="header-menu">
-                <a href="#" class="search-icon">
-                    <img  class="icon-img" src="images/icons-search@3x.png" alt="검색아이콘">
-                </a>
-                <a href="#" class="menu-icon">
-                    <img src="images/icons-menu.png" srcset="images/icons-menu@2x.png 2x, images/icons-menu@3x.png 3x"
-                        alt="메뉴아이콘">
-                </a>
-            </nav>
+            <a href="#" class="close-icon">
+              <img
+                src="images/icons-close.png"
+                srcset="
+                  images/icons-close@2x.png 2x,
+                  images/icons-close@3x.png 3x
+                "
+                alt="닫기아이콘"
+              />
+            </a>
+          </nav>
         </header>
-        <!-- 검색창 -->
-        <div class="box search">
-            <input class="input-search" type="text" placeholder="검색어를 입력하세요">
-            <button class="btn typeB-small" >검색</button>
-        </div>
-            <!-- 메뉴 패널창 -->
-        <div class="menu-pannel">
-            <header class="main-header mobile">
-                <a href="#" class="logo-kr-en">
-                    <img src="images/logo-kr-en.png" srcset="images/logo-kr-en@2x.png 2x, images/logo-kr-en@3x.png 3x" alt="로고">
-                </a>
-                <nav class="header-menu">
-                    <a href="#" class="search-icon">
-                        <img  src="images/icons-search@3x.png" alt="검색아이콘">
-                    </a>
-                    <a href="#" class="close-icon">
-                        <img src="images/icons-close.png" srcset="images/icons-close@2x.png 2x, images/icons-close@3x.png 3x"alt="닫기아이콘" >
-                    </a>
-                </nav>
-            </header>
-            <ul class="menu a">
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">관람 참여
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add" onclick="">
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="#">서울</a></li>
-                        <li><a href="#">과천</a></li>
-                        <li><a href="#">덕수궁</a></li>
-                        <li><a href="#">청주</a></li>
-                        <li><a href="#">어린이미술관</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a class="thiner" href="#">통합예약</a></li>
-                        <li><a class="thiner" href="#">전시해설</a></li>
-                        <li><a class="thiner" href="#">레지던시</a></li>
-                        <li><a class="thiner" href="#">미술은행</a></li>
-                    </ul>
-                </li>
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">전시
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                    </a>
-                    <ul class="submenu ">
-                        <li><a href="#" class="submenu-link">현재전시</a></li>
-                        <li><a href="#" class="submenu-link">예정전시</a></li>
-                        <li><a href="#" class="submenu-link">과거전시</a></li>
-                    </ul>
-                </li>
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">교육
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                    </a>
-                    <ul class="submenu ">
-                        <li><a href="#" class="submenu-link">미술관교육소개</a></li>
-                        <li><a href="#" class="submenu-link">어린이</a></li>
-                        <li><a href="#" class="submenu-link">청소년</a></li>
-                        <li><a href="#" class="submenu-link">교사</a></li>
-                        <li><a href="#" class="submenu-link">성인</a></li>
-                        <li><a href="#" class="submenu-link">교육자료실</a></li>
-                        <li><a href="#" class="submenu-link">참여신청</a></li>
-                    </ul>
-                </li>
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">소장품
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                    </a>
-                    <ul class="submenu ">
-                        <li><a href="#" class="submenu-link">소장품 검색</a></li>
-                        <li><a href="#" class="submenu-link">소장품 탐색</a></li>
-                        <li><a href="#" class="submenu-link">보존과학</a></li>
-                    </ul>
-                </li>
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">미술연구
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                    </a>
-                    <ul class="submenu ">
-                        <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
-                        <li><a href="#" class="submenu-link">연구</a></li>
-                        <li><a href="#" class="submenu-link">발간자료</a></li>
-                    </ul>
-                </li>
-                <li class="menu-li">
-                    <a href="#" class="menu-li-title">디지털미술관
-                        <img src="images/icons-add-bold.png" alt="더하기 아이콘" class="icon-add">
-                    </a>
-                    <ul class="submenu ">
-                        <li><a href="#" class="submenu-link">메인</a></li>
-                        <li><a href="#" class="submenu-link">맞춤검색</a></li>
-                        <li><a href="#" class="submenu-link">오디오가이드</a></li>
-                        <li><a href="#" class="submenu-link">이용자갤러리</a></li>
-                    </ul>
-                </li>
+        <ul class="menu a">
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >관람 참여
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+                onclick=""
+              />
+            </a>
+            <ul class="submenu">
+              <li><a class="thiner"  href="#">서울</a></li>
+              <li><a class="thiner"  href="#">과천</a></li>
+              <li><a class="thiner"  href="#">덕수궁</a></li>
+              <li><a class="thiner"  href="#">청주</a></li>
+              <li><a class="thiner"  href="#">어린이미술관</a></li>
+              <li><a class="thiner"  href="#">이벤트</a></li>
+              <li><a href="#">통합예약</a></li>
+              <li><a href="#">전시해설</a></li>
+              <li><a href="#">레지던시</a></li>
+              <li><a href="#">미술은행</a></li>
             </ul>
-            <ul class="menu b">
-                <li><a href="#">뉴스레터</a></li>
-                <li><a href="#">소식지</a></li>
-                <li><a href="#">새소식</a></li>
-                <li><a href="#">온라인숍</a></li>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >전시
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="#" class="submenu-link">현재전시</a></li>
+              <li><a href="#" class="submenu-link">예정전시</a></li>
+              <li><a href="#" class="submenu-link">과거전시</a></li>
             </ul>
-            <ul class="menu c">
-                <li><a href="#">MMCA회원가입</a></li>
-                <li><a href="#">로그인</a></li>
-                <li>
-                    <label for="select">LANGUAGES:</label>
-                    <select name="lang" class="lang">
-                        <option value="kor">한국어</option>
-                        <option value="eng">ENGLISH</option>
-                        <option value="china">中文</option>
-                        <option value="jap">日本語</option>
-                    </select>
-                </li>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >교육
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="#" class="submenu-link">미술관교육소개</a></li>
+              <li><a href="#" class="submenu-link">어린이</a></li>
+              <li><a href="#" class="submenu-link">청소년</a></li>
+              <li><a href="#" class="submenu-link">교사</a></li>
+              <li><a href="#" class="submenu-link">성인</a></li>
+              <li><a href="#" class="submenu-link">교육자료실</a></li>
+              <li><a href="#" class="submenu-link">참여신청</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >소장품
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="#" class="submenu-link">소장품 검색</a></li>
+              <li><a href="#" class="submenu-link">소장품 탐색</a></li>
+              <li><a href="#" class="submenu-link">보존과학</a></li>
+            </ul>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >미술연구
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="#" class="submenu-link">도서와 아카이브</a></li>
+              <li><a href="#" class="submenu-link">연구</a></li>
+              <li><a href="#" class="submenu-link">발간자료</a></li>
+            </ul>
+          </li>
+          <li class="menu-li">
+            <a href="#" class="menu-li-title"
+              >디지털미술관
+              <img
+                src="images/icons-add-bold.png"
+                alt="더하기 아이콘"
+                class="icon-add"
+              />
+            </a>
+            <ul class="submenu">
+              <li><a href="#" class="submenu-link">메인</a></li>
+              <li><a href="#" class="submenu-link">맞춤검색</a></li>
+              <li><a href="#" class="submenu-link">오디오가이드</a></li>
+              <li><a href="#" class="submenu-link">이용자갤러리</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="menu b">
+          <li><a href="#">뉴스레터</a></li>
+          <li><a href="#">소식지</a></li>
+          <li><a href="#">새소식</a></li>
+          <li><a href="#">온라인숍</a></li>
+        </ul>
+        <ul class="menu c">
+          <li><a href="#">MMCA회원가입</a></li>
+          <li><a href="#">로그인</a></li>
+          <li>
+            <label for="select">LANGUAGES:</label>
+            <select name="lang" class="lang">
+              <option value="kor">한국어</option>
+              <option value="eng">ENGLISH</option>
+              <option value="china">中文</option>
+              <option value="jap">日本語</option>
+            </select>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- 모바일 헤더 끝 -->
-
-    
-
-
-
-
-
-</body>
-
+  </body>
 </html>

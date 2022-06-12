@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>ui06_digitalMuseum</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="default.css">
@@ -15,30 +15,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     
     <style>
+        body{
+            overflow: hidden;
+        }
+        .visible-box.digital{
+            overflow: hidden;
+        }
         .content-container.digital{
-            display: flex;
+            display: flex; 
             width: 300%;
         }
         .content-item.digital{
-            flex-grow: 1;
-            width: calc(320/360*100vw);
-        }     
-        .content-thumb.digital{
-            /* width: calc(320/360*100vw); */
             width: 100%;
+        }
+        .content-thumb.digital{
             height: calc(220/360*100vw);
             border-radius: 10px;
             margin:  20px 0;
         }
+        .navigation.digital{
+            align-items: center;
+        }
+        .navigation.digital .before-icon,
+       .navigation.digital .next-icon{
+        padding: 10px;
+       }
+
+
+
+
        @media (min-width:1080px) {
-        .visible-box.digital{
-            margin: 0 -12px;
-        }   
         .content-container.digital{
+            float: left;
             width: 100%;
+            overflow: hidden;
         }
         .content-item.digital{
-            padding: 0 12px ;
+            width: 33.3%;
+            padding: 0 12px;
+
         }
         .content-thumb.digital{
             width: 100%;
@@ -48,11 +63,7 @@
             display: none;
         }
        }
-       .before-icon,
-       .next-icon{
-        padding: 10px;
-       }
-
+      
     </style>
 </head>
 <body>
@@ -71,7 +82,7 @@
             <div class="visible-box digital">
                 <div class="content-container digital">
                     <!-- 1/ 시작 -->
-                    <article class="content-item digital tv1">
+                    <article class="content-item digital ">
                         <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital01.jpeg)">
                             <img class="a11y-hidden" src="images/img_digital01.jpeg" alt="mmca tv- 김지민">
                         </figure>
@@ -84,7 +95,7 @@
                     </article>
                     <!-- 1/ 끝 -->
                     <!-- 2/ 시작 -->
-                    <article class="content-item digital tv2">
+                    <article class="content-item digital ">
                         <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital02.jpeg)">
                             <img class="a11y-hidden" src="images/img_digital02.jpeg" alt="1930년대">
                         </figure>
@@ -98,7 +109,7 @@
                     </article>
                     <!-- 2 끝-->
                     <!-- 3/ 시작-->
-                    <article class="content-item digital tv3">
+                    <article class="content-item digital ">
                         <figure class="content-thumb digital a11y-hidden-bg" style="background-image: url(images/img_digital03.png)">
                             <img class="a11y-hidden" src="images/img_digital03.png" alt="1950년대">
                         </figure>
@@ -113,6 +124,7 @@
                     <!--3/ 끝-->
                 </div>
             </div>
+
 
             <!-- 디지털 미술관 끝 -->
             <!-- 네비게이션 시작 -->

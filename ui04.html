@@ -1,113 +1,280 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
     <title>ui04_Exhibit</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="ui.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="default.css" />
+    <!-- <link rel="stylesheet" href="ui.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        .content-thumb.exhibit{
-            width: calc(265/360*100vw);
-            padding-bottom: calc(420/360*100%);
-            border-radius: 10px;
+      body {
+        overflow: hidden;
+      }
+      /* #04 : exhibit */
+      .container.exhibit {
+        width: 100vw;
+      }
+      .content-container.exhibit {
+        display: flex;
+        overflow-x: scroll;
+        margin: 0 -0.5rem;
+      }
+      .content-container.exhibit::-webkit-scrollbar {
+        overflow-y: hidden;
+        width: 0;
+      }
+      .content-item.exhibit {
+        padding: 0 0.5rem;
+      }
+      .content-thumb.exhibit {
+        width: calc(265 / 360 * 100vw);
+        padding-bottom: calc(420 / 360 * 100vw);
+        border-radius: 10px;
+        margin-bottom: 24px;
+      }
+      .content-title.exhibit {
+        font-weight: bold;
+      }
+      .content-desc.exhibit {
+        opacity: 0.5;
+        padding-top: 10px;
+      }
+      .audio-guide.exhibit {
+        display: block;
+        margin-top: 18px;
+      }
+      .sec-navi.exhibit {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .content-thumb.exhibit {
+          width: calc(300 / 768 * 100vw);
+          padding-bottom: calc(450 / 768 * 100vw);
         }
+      }
+      @media (min-width: 1080px) {
+        .content-thumb.exhibit {
+          width: calc(355 / 1080 * 100vw);
+          padding-bottom: calc(540 / 1080 * 100vw);
+        }
+        .sec-navi.exhibit {
+          display: flex;
+        }
+        .sec-navi-link.exhibit {
+          display: block;
+          padding: 0 20px;
+          font-size: calc(24 / 16 * 1rem);
+          color: #222;
+          line-height: 1.2;
+        }
+        .sec-navi-link.exhibit:active {
+        }
+        .sec-navi.exhibit > li:first-child {
+          font-weight: bolder;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+      @media (min-width: 1920px) {
+        .content-container.exhibit {
+          margin: 0 -15px;
+        }
+        .content-item.exhibit {
+          width: calc(377 / 1920 * 100vw);
+          padding: 0 15px;
+        }
+        .content-thumb.exhibit {
+          width: 100%;
+          padding-bottom: calc(500 / 1920 * 100vw);
+          margin-bottom: 30px;
+        }
+
+        .content-sub-title.exhibit {
+          font-size: calc(18 / 16 * 1rem);
+        }
+        .content-title.exhibit {
+          font-size: calc(24 / 16 * 1rem);
+          font-weight: bold;
+        }
+        .content-desc.exhibit {
+          font-size: calc(18 / 16 * 1rem);
+          padding-top: 10px;
+        }
+        .audio-guide.exhibit {
+          display: block;
+          margin-top: 24px;
+        }
+        .sec-navi-link.exhibit {
+          padding: 0 24px;
+          font-size: calc(36 / 16 * 1rem);
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container exhibit">
-        <section class="content-box">
-            <header class="sec-header">
-                <h2 class="sec-title">전시</h2> 
-                <a href="#" class="more m">
-                    <span>더보기</span>
-                    <img src="images/icons-more.png" srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x" alt="더보기아이콘" style="width: 17px; height: 17px;">
-                </a>
-            </header>
-                <!-- 자바스크립트로 처리하기 나중에 -->
-            <div class="visible-box-1">
-                <div class="content-container exhibit">
-                    <!-- 1/ 시작 -->
-                    <article class="content-item exhibit">
-                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh01.png)">
-                            <img class="a11y-hidden" src="images/img_exh01.png" alt="히토 슈타이얼">
-                        </figure>
-                        <figcaption>
-                            <h4 class="content-sub-title">서울</h4>
-                            <h3 class="content-title exhibit">히토 슈타이얼 - 데이터의 바다</h3>
-                            <p class="content-desc exhibit">
-                                2022-04-29~2022-09-18
-                            </p>
-                            <a class="audio-guide">
-                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
-                                <span>오디오 가이드</span>
-                            </a>
-                        </figcaption>
-                    </article>
-                    <!-- 1/ 끝 -->    
-                    <!-- 2/ 시작 -->
-                    <article class="content-item exhibit">
-                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh02.png)">
-                            <img class="a11y-hidden" src="images/img_exh02.png" alt="가면무도회">
-                        </figure>
-                        <figcaption>
-                            <h4 class="content-sub-title">과천</h4>
-                            <h3 class="content-title exhibit">가면무도회</h3>
-                            <p class="content-desc exhibit">
-                                2022-04-13 ~ 2022-07-31
-                            </p>
-                            <a class="audio-guide">
-                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
-                                <span>오디오 가이드</span>
-                            </a>
-                        </figcaption>
-                    </article>
-                    <!-- 2 끝-->
-                    <!-- 3/ 시작-->
-                    <article class="content-item exhibit">
-                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh03.png)">
-                            <img class="a11y-hidden" src="images/img_exh03.png" alt="히토 슈타이얼">
-                        </figure>
-                        <figcaption>
-                            <h4 class="content-sub-title">서울</h4>
-                            <h3 class="content-title exhibit">나너의 기억</h3>
-                            <p class="content-desc exhibit">
-                                2022-04-08 ~ 2022-08-07
-                            </p>
-                            <a class="audio-guide">
-                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
-                                <span>오디오 가이드</span>
-                            </a>
-                        </figcaption>
-                    </article>
-                    <!--3/ 끝-->
-                    <!-- 4/ 시작-->
-                    <article class="content-item exhibit">
-                        <figure class="content-thumb exhibit a11y-hidden-bg" style="background-image: url(images/img_exh04.png)">
-                            <img class="a11y-hidden" src="images/img_exh04.png" alt="히토 슈타이얼">
-                        </figure>
-                        <figcaption>
-                            <h4 class="content-sub-title">청주</h4>
-                            <h3 class="content-title exhibit">MMCA 국제미술 소장품 기획전 «미술로, 세계로»</h3>
-                            <p class="content-desc exhibit">
-                                2022-01-20 ~ 2022-06-12
-                            </p>
-                            <a class="audio-guide">
-                                <img src="images/icons-headphone.png" srcset="images/icons-headphone@2x.png 2x, images/icons-headphone@3x.png 3x" alt="오디오아이콘">
-                                <span>오디오 가이드</span>
-                            </a>
-                        </figcaption>
-                    </article>
-                    <!--4/ 끝-->
-                </div>            
-            </div>
-        </section>
+      <section class="content-box">
+        <header class="sec-header">
+          <h2 class="sec-title">전시</h2>
+          <ul class="sec-navi exhibit">
+            <li><a href="#" class="sec-navi-link exhibit">전체</a></li>
+            <li><a href="#" class="sec-navi-link exhibit">서울</a></li>
+            <li><a href="#" class="sec-navi-link exhibit">과천</a></li>
+            <li><a href="#" class="sec-navi-link exhibit">덕수궁</a></li>
+            <li><a href="#" class="sec-navi-link exhibit">청주</a></li>
+            <li><a href="#" class="sec-navi-link exhibit">어린이미술관</a></li>
+          </ul>
+          <a href="#" class="more m">
+            <span>더보기</span>
+            <img
+              src="images/icons-more.png"
+              srcset="images/icons-more@2x.png 2x, images/icons-more@3x.png 3x"
+              alt="더보기아이콘"
+              style="width: 17px; height: 17px"
+            />
+          </a>
+        </header>
+        <!-- 자바스크립트로 처리하기 나중에 -->
+        <div class="content-container exhibit">
+          <!-- 1/ 시작 -->
+          <article class="content-item exhibit">
+            <figure
+              class="content-thumb exhibit a11y-hidden-bg"
+              style="background-image: url(images/img_exh01.png)"
+            >
+              <img
+                class="a11y-hidden"
+                src="images/img_exh01.png"
+                alt="히토 슈타이얼"
+              />
+            </figure>
+            <figcaption>
+              <h4 class="content-sub-title exhibit">서울</h4>
+              <h3 class="content-title exhibit">
+                히토 슈타이얼 - 데이터의 바다
+              </h3>
+              <p class="content-desc exhibit">2022-04-29~2022-09-18</p>
+              <a class="audio-guide exhibit">
+                <img
+                  src="images/icons-headphone.png"
+                  srcset="
+                    images/icons-headphone@2x.png 2x,
+                    images/icons-headphone@3x.png 3x
+                  "
+                  alt="오디오아이콘"
+                />
+                <span>오디오 가이드</span>
+              </a>
+            </figcaption>
+          </article>
+          <!-- 1/ 끝 -->
+          <!-- 2/ 시작 -->
+          <article class="content-item exhibit">
+            <figure
+              class="content-thumb exhibit a11y-hidden-bg"
+              style="background-image: url(images/img_exh02.png)"
+            >
+              <img
+                class="a11y-hidden"
+                src="images/img_exh02.png"
+                alt="가면무도회"
+              />
+            </figure>
+            <figcaption>
+              <h4 class="content-sub-title exhibit">과천</h4>
+              <h3 class="content-title exhibit">가면무도회</h3>
+              <p class="content-desc exhibit">2022-04-13 ~ 2022-07-31</p>
+              <a class="audio-guide exhibit">
+                <img
+                  src="images/icons-headphone.png"
+                  srcset="
+                    images/icons-headphone@2x.png 2x,
+                    images/icons-headphone@3x.png 3x
+                  "
+                  alt="오디오아이콘"
+                />
+                <span>오디오 가이드</span>
+              </a>
+            </figcaption>
+          </article>
+          <!-- 2 끝-->
+          <!-- 3/ 시작-->
+          <article class="content-item exhibit">
+            <figure
+              class="content-thumb exhibit a11y-hidden-bg"
+              style="background-image: url(images/img_exh03.png)"
+            >
+              <img
+                class="a11y-hidden"
+                src="images/img_exh03.png"
+                alt="히토 슈타이얼"
+              />
+            </figure>
+            <figcaption>
+              <h4 class="content-sub-title exhibit">서울</h4>
+              <h3 class="content-title exhibit">나너의 기억</h3>
+              <p class="content-desc exhibit">2022-04-08 ~ 2022-08-07</p>
+              <a class="audio-guide exhibit">
+                <img
+                  src="images/icons-headphone.png"
+                  srcset="
+                    images/icons-headphone@2x.png 2x,
+                    images/icons-headphone@3x.png 3x
+                  "
+                  alt="오디오아이콘"
+                />
+                <span>오디오 가이드</span>
+              </a>
+            </figcaption>
+          </article>
+          <!--3/ 끝-->
+          <!-- 4/ 시작-->
+          <article class="content-item exhibit">
+            <figure
+              class="content-thumb exhibit a11y-hidden-bg"
+              style="background-image: url(images/img_exh04.png)"
+            >
+              <img
+                class="a11y-hidden"
+                src="images/img_exh04.png"
+                alt="히토 슈타이얼"
+              />
+            </figure>
+            <figcaption>
+              <h4 class="content-sub-title exhibit">청주</h4>
+              <h3 class="content-title exhibit">
+                MMCA 국제미술 소장품 기획전 «미술로, 세계로»
+              </h3>
+              <p class="content-desc exhibit">2022-01-20 ~ 2022-06-12</p>
+              <a class="audio-guide exhibit">
+                <img
+                  src="images/icons-headphone.png"
+                  srcset="
+                    images/icons-headphone@2x.png 2x,
+                    images/icons-headphone@3x.png 3x
+                  "
+                  alt="오디오아이콘"
+                />
+                <span>오디오 가이드</span>
+              </a>
+            </figcaption>
+          </article>
+          <!--4/ 끝-->
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>

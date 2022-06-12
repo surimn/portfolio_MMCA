@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=deviceidth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <title>ui08_news</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="default.css">
@@ -13,20 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     
     <style>
-        .container.news{
-            background-color: #BFBFBF;
-        }
-        .content-box{
+        body{
             overflow-x: hidden;
         }
-        /* 뉴스레터 */
-        .content-box.newsletter{
-            overflow: hidden;
-            overflow-x: hidden;        
+        .container.news{
+            background-color: #BFBFBF;
+            
         }
+        /* 뉴스레터 */
         .content-container.newsletter{
             display: flex;
             width: 400%;
+        }
+        .visible-box.newsletter{
+            overflow: hidden;
         }
         .content-item.newsletter{  
             display: flex;
@@ -40,15 +40,15 @@
             border-radius: 10px;
             margin-bottom: 20px; 
         }
-        .visible-box.newsletter{
-            overflow: hidden;
-        }
+
         .binding-box.news{
             margin-top: 100px;
         }
         .content-box.news{
            padding-top: 50px;
         } 
+
+
         /* 뉴스레터 구독 */
        .content-container.newsletter-subs{
            display: flex;
@@ -71,6 +71,11 @@
             text-align: center;
             font-size: 0.9rem;
             border-radius: 2rem;
+            cursor: pointer;
+        }
+        .content-box.newsletter-subs .btn.typeC:hover{
+            background-color: #222;
+            color: #fff;
         }
         /* 새소식 */
         .divider{
@@ -78,15 +83,42 @@
         }
         .content-item.news{
             margin-top: 10px;
+            table-layout: fixed;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: calc(320/360*100vw);
+            overflow: hidden;
         }
         .content-item.news tr{
             line-height: 2.5em;
             font-size: calc(14/16*1rem);
         }
+        .content-item.news tr:hover{
+            font-weight: bold;
+            font-size: 1.1em;
+        }
         @media (min-width:768px) {
             .content-thumb.newsletter{
                 padding-bottom: calc(335/768*100%);
             }
+            .binding-box.news{
+                display: flex;  
+                margin-top: 100px;
+                margin: 100px -12px 0px -12px;
+            }
+            .content-box.newsletter-subs,
+            .content-box.news{
+                width: 50vw;
+                flex-grow: 1;
+                padding: 0 12px;
+            }
+            .content-item.news{
+            table-layout: fixed;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+             }
         }
         @media (min-width:1080px) {
             .content-box.newsletter .content-title{
@@ -108,18 +140,10 @@
             .navigation.newsletter{
                 display: none;
             }
-            .binding-box.news{
-                display: flex;  
-                margin-top: 100px;
-            }
-            .content-box.newsletter-subs,
-            .content-box.news{
-                width: 50vw;
-                flex-grow: 1;
-            }
+            
+            
             .content-box.newsletter-subs{
                 padding-right: 0.75rem;
-                padding-top: 50px;
             }
             .content-box.news{
                 padding-left: 0.75rem;
@@ -165,20 +189,20 @@
                             <img class="a11y-hidden" src="images/news02.png" alt="뉴스레터">
                         </figure>
                         <figcaption>
-                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h4 class="content-sub-title newsletter">미술관플러스</h4>
                             <h3 class="content-title newsletter">
-                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                국립현대미술관 외국인 서포터즈 함께...
                             </h3>
                         </figcaption>
                     </article>
                     <article class="content-item newsletter">
-                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news03.png)">
-                            <img class="a11y-hidden" src="images/news03.png" alt="뉴스레터">
+                        <figure class="content-thumb newsletter a11y-hidden-bg" style="background-image: url(images/news05.png)">
+                            <img class="a11y-hidden" src="images/news05.png" alt="뉴스레터">
                         </figure>
                         <figcaption>
                             <h4 class="content-sub-title newsletter">전시 포커스</h4>
                             <h3 class="content-title newsletter">
-                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                삶을 껴안고 다독이던 채색화, 한국의 ...
                             </h3>
                         </figcaption>
                     </article>
@@ -187,9 +211,9 @@
                             <img class="a11y-hidden" src="images/news04.png" alt="뉴스레터">
                         </figure>
                         <figcaption>
-                            <h4 class="content-sub-title newsletter">전시 포커스</h4>
+                            <h4 class="content-sub-title newsletter">소장품 더보기</h4>
                             <h3 class="content-title newsletter">
-                                디지털 사회 이면을 바라보다 , 히토슈타이얼-데이터의 바다 
+                                단단한 껍질을 깨고 혼불을 밝히다.하.. 
                             </h3>
                         </figcaption>
                     </article>
@@ -261,7 +285,7 @@
                 <div class="content-container news">
                     <table class="content-item news">
                         <tr><td><a>국립현대미술관 소식지 9호 표지촬영 안내</a></td></tr>
-                        <tr><td><a>2022년 현충일 기념 미술관 정상개관 및 대체휴관일 ...</a></td></tr>
+                        <tr><td><a>국립현대미술관 청주 특별수장고 «국립현대미술관 드로잉 소장품» 운영 재개</a></td></tr>
                         <tr><td><a>과천관 하늘정원, 원형정원, 옥상정원 출입 제한 안내</a></td></tr>
                     </table>
                 </div>
