@@ -10,7 +10,7 @@
     <title>ui07_Service & Newsletter</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="default.css" />
-    <link rel="stylesheet" href="ui.css" />
+    <!-- <link rel="stylesheet" href="ui.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,14 +35,23 @@
         display: none;
       }
       .content-item.service {
+        width: calc(265/360 * 100vw);
         padding: 0 0.5rem;
       }
       .content-thumb.service {
-        width: calc(265 / 360 * 100vw);
+        width: calc(265/360 * 100vw);
         padding-bottom: 50%;
         border-radius: 10px;
         margin-bottom: 30px;
       }
+
+
+
+
+
+
+
+
 
       @media (min-width: 768px) {
         .content-thumb.service {
@@ -64,9 +73,7 @@
         }
       }
       .content-item.service {
-          padding: 0;
-          width: 25%;
-          padding: 0 20px;
+          width: 100%;
         }
 
 

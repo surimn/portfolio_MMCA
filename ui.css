@@ -588,15 +588,15 @@
 /* ------------------------------------------------ */
 /* #04 : exhibit */
 .container.exhibit {
-  width: 100vw;
 }
 .content-container.exhibit {
+  width: calc(320/360*100vw);
   display: flex;
   overflow-x: scroll;
-  margin: 0 -0.5rem;
+  /* margin: 0 -0.5rem; */
 }
 .content-container.exhibit::-webkit-scrollbar {
-  overflow-y: hidden;
+  display: none;
   width: 0;
 }
 .content-item.exhibit {
@@ -619,16 +619,14 @@
   display: block;
   margin-top: 18px;
 }
-.sec-navi.exhibit{
+.sec-navi.exhibit {
   display: none;
 }
-
-
 
 @media (min-width: 768px) {
   .content-thumb.exhibit {
     width: calc(300 / 768 * 100vw);
-    padding-bottom: calc(450/ 768 * 100vw);
+    padding-bottom: calc(450 / 768 * 100vw);
   }
 }
 @media (min-width: 1080px) {
@@ -636,30 +634,30 @@
     width: calc(355 / 1080 * 100vw);
     padding-bottom: calc(540 / 1080 * 100vw);
   }
-  .sec-navi.exhibit{
-  display: flex;
-}
-.sec-navi-link.exhibit{
-  display: block;
-  padding: 0 20px;
-  font-size: calc(24/16*1rem);
-  color: #222;
-  line-height: 1.2;
-}
-.sec-navi-link.exhibit:active{     
-}
-.sec-navi.exhibit>li:first-child{
-  font-weight: bolder;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+  .sec-navi.exhibit {
+    display: flex;
+  }
+  .sec-navi-link.exhibit {
+    display: block;
+    padding: 0 20px;
+    font-size: calc(24 / 16 * 1rem);
+    color: #222;
+    line-height: 1.2;
+  }
+  .sec-navi-link.exhibit:active {
+  }
+  .sec-navi.exhibit > li:first-child {
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
 @media (min-width: 1920px) {
   .content-container.exhibit {
     margin: 0 -15px;
   }
   .content-item.exhibit {
-    width: calc(377/1920*100vw);
+    width: calc(377 / 1920 * 100vw);
     padding: 0 15px;
   }
   .content-thumb.exhibit {
@@ -683,10 +681,10 @@
     display: block;
     margin-top: 24px;
   }
-  .sec-navi-link.exhibit{
-  padding: 0 24px;
-  font-size: calc(36/16*1rem);
-}
+  .sec-navi-link.exhibit {
+    padding: 0 24px;
+    font-size: calc(36 / 16 * 1rem);
+  }
 }
 
 /* ------------------------------------------------ */
@@ -803,60 +801,68 @@ padding: 10px;
 /* =============================================== */
 /* ------------------------------------------------ */
 /* #07 : service */
-      /* 서비스 */
-      .container.service {
-        background-color: #bfbfbf;
-      }
-      .content-container.service {
-        overflow-x: scroll;
-        display: flex;
-        margin: 0 -0.5rem;
-      }
-      .content-container.service::-webkit-scrollbar {
-        display: none;
-      }
-      .content-item.service {
-        padding: 0 0.5rem;
-      }
-      .content-thumb.service {
-        width: calc(265 / 360 * 100vw);
-        padding-bottom: 50%;
-        border-radius: 10px;
-        margin-bottom: 30px;
-      }
+/* 서비스 */
+.container.service {
+  background-color: #bfbfbf;
+}
+.content-container.service {
+  overflow-x: scroll;
+  display: flex;
 
-      @media (min-width: 768px) {
-        .content-thumb.service {
-          width: calc(266 / 768 * 100vw);
-        }
-      }
-      @media (min-width: 1080px) {
-        .content-container.service{
-          margin: 0 auto;
-          width: 100%;
-        }
-        .content-container.service::-webkit-scrollbar {
-        display: none;
-        width: 0;
-      }
-        
-        .content-thumb.service {
-          width: 100%;
-        }
-      }
-      .content-item.service {
-          padding: 0;
-          width: 25%;
-          padding: 0 20px;
-        }
+}
+.content-container.service::-webkit-scrollbar {
+  display: none;
+}
+.content-item.service {
+  flex: 1 1 auto;
+  width: calc(265/360 * 100vw);
+  padding: 0 0.5rem;
+}
+.content-thumb.service {
+  width: calc(265/360 * 100vw);
+  padding-bottom: 50%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
 
 
 
-      @media (min-width: 1920px) {
-        .content-sub-title {
-          font-size: calc(24 / 16 * 1rem);
-        }
-      }
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .content-thumb.service {
+    width: calc(266 / 768 * 100vw);
+  }
+}
+@media (min-width: 1080px) {
+  .content-container.service{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .content-container.service::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+  
+  .content-thumb.service {
+    width: 100%;
+  }
+}
+.content-item.service {
+    width: 100%;
+  }
+
+
+
+@media (min-width: 1920px) {
+  .content-sub-title {
+    font-size: calc(24 / 16 * 1rem);
+  }
+}
 /* ------------------------------------------------ */
 /* #08 : news */
 .container.news{

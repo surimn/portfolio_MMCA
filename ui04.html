@@ -10,7 +10,7 @@
     <title>ui04_Exhibit</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="default.css" />
-    <!-- <link rel="stylesheet" href="ui.css" /> -->
+    <link rel="stylesheet" href="ui.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,12 +24,14 @@
       }
       /* #04 : exhibit */
       .container.exhibit {
-        width: 100vw;
+        width: calc(320/360*100vw);
+        /* width: 100vw; */
       }
       .content-container.exhibit {
+        width: calc(320/360*100vw);
         display: flex;
         overflow-x: scroll;
-        margin: 0 -0.5rem;
+        /* margin: 0 -0.5rem; */
       }
       .content-container.exhibit::-webkit-scrollbar {
         overflow-y: hidden;
