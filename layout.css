@@ -41,7 +41,12 @@ body{
 
 }
 @media (min-width: 1080px) {
-	
+	.main-header-box.mobile{
+		display: none;
+	}
+	.main-header.pc{
+		display: flex;
+	}
 }
 
 
