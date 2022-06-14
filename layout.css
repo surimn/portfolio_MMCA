@@ -1,4 +1,4 @@
-body{
+html,body{
 	overflow-x: hidden;
 }
 .main-page{
@@ -18,7 +18,7 @@ body{
 .reservation-m{
 	padding: 0 20px;
   }
-@media (min-width: 360px) {
+  @media screen and (min-width:360px){
 	.container{
 		padding: 40px 0px;
 	}
@@ -36,11 +36,7 @@ body{
 
 
 }
-
-@media (min-width: 768px) {
-
-}
-@media (min-width: 1080px) {
+@media screen and (min-width:1080px){
 	.main-header-box.mobile{
 		display: none;
 	}
@@ -50,7 +46,7 @@ body{
 }
 
 
-@media (min-width: 1920px) {
+@media screen and (min-width:1920px) {
 	.main-page{
 		width: 100vw;
 	}
@@ -94,12 +90,12 @@ body{
 	}
 	.bg-.grid-2{
 		grid-area: grid-2;
-		/* grid-column:3/4;
-		grid-row: 5/6; */
+
 	}
 	.footer{
 		grid-area: footer;
 		background-color: #bfbfbf;	
 	}
 }
+
 
